@@ -2,20 +2,8 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Informa y ofrece servicios para la creacion de páginas web y software para empresas, tambien ofrece presentaciones de marca para negocios y empresas"/>
-  <meta name="keywords" content="Website, Witsite, paginas web, Aplicaciones, Desarrollo, Illustración digital"/>
-  <meta name="author" content="José Agustin Rodriguez" />
-  <title>Witsite</title> 
-  <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">  
-  <!-- Custom css -->
-  <link rel="stylesheet" href="/styles.css">
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- HEAD -->
+  <%- include("./partials/head.html"); %>
 </head>
 
 <body>
@@ -24,25 +12,7 @@
 
     <!-- NAVEGACION -->
 
-    <div class="nav__container">
-
-      <nav>
-        <img src="/SVG/icon--nav.svg" alt="">
-
-        <ul class="nav-menu">
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-
-        
-      </nav>
-
-      <ul class="menu--btn">
-        <li><i class="fas fa-bars fa-2x"></i></li>
-      </ul>
-
-    </div>
+    <%- include("./partials/nav.html"); %>
 
 
 
@@ -80,7 +50,6 @@
     <!-- PROYECTOS -->
 
     <div class="content__main--container">
-
 
       <h2 class="proyectos--title">Proyectos</h2>
 
@@ -150,50 +119,21 @@
 
 
 
+    
     <!-- FOOTER -->
 
-    <div class="footer" id="contacto">
-
-      <div class="form">
-
-        <h4>¡Envianos un mensaje!</h4>
+    <%- include("./partials/footer.html"); %>
 
 
-        <div>
-          <input type="text" value="" class="input-form">
-          <input type="text" value="" class="input-form">
-          <input type="text" value="" class="input-form">
-        </div>
 
-        <input type="button" value="Enviar" class="input--form">
 
-      </div>
 
-    </div>
-
-      <!-- REDES -->
-
-      <div class="redes--container">
-
-        <ul>
-          <li><a href="https://github.com/CodeHxH" target="_blank"> <img src="/SVG/github.svg" class="redes--item" alt=""> </a></li>
-          <li><a href="https://www.facebook.com/" target="_blank"> <img src="/SVG/facebook.svg" class="redes--item" alt=""> </a></li>
-          <li><a href="https://www.linkedin.com/" target="_blank"> <img src="/SVG/linkedin.svg" class="redes--item" alt=""> </a></li>
-        </ul>
-
-      </div>
-
-    <!-- COPYRIGHT -->
-
-    <div class="copyright">
-      <footer>Developed And Designed By <b><a href="mailto:rodriguezjoseagustin31@gmail.com" target="_blank">Agustin R</a></b>. ©2021. All Rights Reserved.</footer>
-    </div>
-
-  </div>
 
   <!-- Scroll Reveal -->
   <!-- <script src="https://unpkg.com/scrollreveal"></script>
   <script src="index.js"></script> -->
+
+  </div>
 
 </body>
 </html>
