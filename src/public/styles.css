@@ -86,7 +86,7 @@ nav img {
 /* HEADER */
 
 .header--container {
-  background: url("./imagenes/1x/1x/fondo--header.png") no-repeat center
+  background: url("./images/fondo--header.png") no-repeat center
     center/cover;
 }
 
@@ -219,7 +219,7 @@ h3 {
   position: relative;
   top: 200px;
   height: 1000px;
-  background: url("./imagenes/1x/1x/fondo--servicios.png") no-repeat center
+  background: url("./images/fondo--servicios.png") no-repeat center
     center/cover;
 }
 
@@ -377,11 +377,6 @@ footer a:hover {
 
   /* HEADER */
 
-  .header--container {
-    background: url("./imagenes/1x/1x/fondo--header.png") no-repeat center
-      center/cover;
-  }
-
   header {
     flex-direction: column;
   }
@@ -513,7 +508,7 @@ footer a:hover {
   /* HEADER */
 
   .header--container {
-    background: url("./imagenes/1x/1x/fondo__header--movil.png") no-repeat center
+    background: url("./images/fondo__header--movil.png") no-repeat center
       center/cover ;
   }
 
