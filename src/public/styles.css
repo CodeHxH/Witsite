@@ -184,7 +184,7 @@ header h1 {
 .content--container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 80px;
+  grid-gap: 50px;
   margin: 100px 0;
 }
 
@@ -262,9 +262,10 @@ h3 {
   z-index: 1000;
   background-color: #b255cc;
   width: 500px;
-  height: 400px;
+  height: 450px;
   border-radius: 15px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 50px;
 }
@@ -272,6 +273,15 @@ h3 {
 .form h4 {
   text-align: center;
   margin: 20px 0;
+}
+
+textarea {
+  resize:none;
+  width: 90%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.247);
+  border: none;
+  margin: 15px 20px;
 }
 
 .input-form {
@@ -282,11 +292,10 @@ h3 {
   margin: 15px 20px;
 }
 
-/* .input-form:active {
-  background: linear-gradient(to bottom, transparent, #fff);    
-  border-bottom: 3px solid #b255cc;
-  outline: none;
-} */
+.input-form::placeholder {
+  color: #fff;
+  opacity: 80%;
+}
 
 .input--form {
   width: 90%;
