@@ -24,8 +24,8 @@ router.post('/send-email', async(req, res) => {
     port:465,
     secure:true,
     auth:{
-      user:"rodriguezjoseagustin31@gmail.com",
-      pass:"yunslvtttcdppfre",
+      user:"onthewitsite@gmail.com",
+      pass:"hkuwnkcufznqelse",
     },
     tls: {
       rejectUnauthorized: false
@@ -33,8 +33,8 @@ router.post('/send-email', async(req, res) => {
   });
 
   const info = await transporter.sendMail({
-    from:'"Witsite user" <rodriguezjoseagustin31@gmail.com>',
-    to:"rodriguezjoseagustin30@gmail.com",
+    from:'"Witsite user" <onthewitsite@gmail.com>',
+    to:"rodriguezjoseagustin31@gmail.com",
     subject:"Witsite user",
     html: contentHTML
   });
