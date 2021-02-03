@@ -44,7 +44,7 @@ nav a:hover {
 
 /* NAVEGACION*/
 
-.nav__container {
+.nav--container {
   width: 100%;
   margin: auto;
   position: fixed;
@@ -60,14 +60,13 @@ nav {
   background-color: #84329b;
 }
 
-
-/* .nav-menu {
+/* .nav--menu {
   display: flex;
   flex-direction: row;
   align-items: center;
 } */
 
-.nav-menu {
+.nav--menu {
   position: relative;
   padding: 50px 0;
   display: flex;
@@ -80,11 +79,10 @@ nav {
   transition: all 1s;
 }
 
-.nav-menu.open {
+.nav--menu.open {
   transform: translateX(-100px);
   transition: all .5s;
 }
-
 
 nav ul li {
   margin: 50px 25px;
@@ -235,24 +233,24 @@ article img {
   height: 900px;
   padding: 20px;
 }  
-
+ 
 .form--container h4 {
   text-align: center;
   margin: 30px 20px;
   font-size: 1.3em;
 }  
 
-.info--container__form {
+.info__form--container {
   background-color: #000000;
   padding: 30px;
 }
 
-.info--container__form li {
+.info__form--container li {
   margin: 20px 0px;
   display: block;
 }
 
-.info--container__form li span {
+.info__form--container li span {
   padding: 10px;
 }
 
@@ -280,7 +278,7 @@ textarea {
   height: 100px;
 }  
 
-.input-form {
+.input--form {
   padding: 10px;
   margin: 10px;
   border:none;
@@ -289,11 +287,11 @@ textarea {
   outline: none;
 }  
 
-.input-form::placeholder {
+.input--form::placeholder {
   color: #fff;
 } 
 
-.input-form:focus {
+.input--form:focus {
   border-bottom: 3px solid rgb(171, 81, 196);
 }
 
@@ -329,15 +327,15 @@ textarea {
   flex-direction: column;
 }  
 
-.links > *{
+.links--footer > *{
   margin: 20px;
 }
 
-.links > *:hover {
+.links--footer > *:hover {
   color: #ccc;
 }
 
-.links {
+.links--footer {
   display: flex;
   flex-direction: column;
   align-items: center;
