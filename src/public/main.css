@@ -67,7 +67,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #252525;
+  background: radial-gradient(#353535,#252525);
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -170,7 +170,8 @@ article {
 }
 
 section {
-  background-color: #161616;
+  background: radial-gradient(#202020,#161616);
+
 }
 
 .title {
@@ -227,10 +228,16 @@ article img {
 
 .img--megafono {
   margin-top: 50px;
+  padding: 20px;
+}
+
+.img--equipo {
+  padding: 20px;
 }
 
 .img--diseñar {
   width: 400px;
+  padding: 20px;
 }
 
 .img--xd {
@@ -367,7 +374,7 @@ article img {
 /* FORMULARIO */
 
 .form--container{
-  background-color: #161616;
+  background: radial-gradient(#202020,#161616);
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -466,7 +473,7 @@ textarea {
   height: 600px;
   position: relative;
   background-color: #84329b;
-  background: linear-gradient(#84329b,rgb(171, 81, 196));
+  background: radial-gradient(#84329b,#9d3cb8);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
