@@ -36,6 +36,7 @@ nav a:hover {
 .container {
   width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
 
@@ -74,20 +75,15 @@ nav {
 }
 
 .nav--menu.open {
-  transform: translateX(-100px);
+  transform: translateX(-78px);
   transition: all .5s;
 }
 
 nav ul li {
-  margin: 50px 25px;
+  margin: 40px 25px;
 }
 
 nav ul li a {
-  transition: all .25s;
-}
-
-nav ul li a:hover {
-  font-size: 30px;
   transition: all .25s;
 }
 
@@ -407,6 +403,9 @@ article img {
 .form {
   background: radial-gradient(#84329b,#923baa);
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }    
 
 .block {
@@ -415,7 +414,7 @@ article img {
 
 .input__form--container{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2,150px);
 }
 
 textarea {
@@ -530,12 +529,12 @@ textarea {
 
 footer {
   text-align: center;
-  font-size: .6em;
+  font-size: .7em;
 }
 
 footer a {
   color: #5b52df;
-  font-size: 12px;
+  font-size: .7em;
 }
 
 footer a:hover {
