@@ -1,7 +1,7 @@
 //NAVBAR RESPONSIVE
 const btn = document.querySelector(".menu--btn");
 const navLinks = document.querySelector(".nav--menu");
-const links = document.querySelectorAll(".nav-links li");
+//const links = document.querySelectorAll(".nav-links li");
 
 btn.addEventListener("click", () => {
   navLinks.classList.toggle("open");
