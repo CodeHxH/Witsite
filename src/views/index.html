@@ -8,30 +8,30 @@
 
 <body>
 
+  <!-- NAVEGACION -->
+
+  <%- include("./partials/nav.html"); %>
+
+
+
+
+
   <div class="container">
-
-    <!-- NAVEGACION -->
-
-    <%- include("./partials/nav.html"); %>
-
-
-
-
 
     <!-- HEADER -->
 
     <div class="header--container">
 
       <header>
-        <img src="/SVG/logo--caja.svg" alt="">
+        <img src="/SVG/logo--caja.svg" alt="" class="animate__animated animate__fadeInDown">
 
         <div class="header__info--container">
 
           <div class="btn">
-            <a href="#">CONTACTANOS</a>
+            <a href="#">Solicita tu presupuesto</a>
           </div>
 
-          <h1>¿Tu negocio está iniciando? ¿Quieres expandir tu marca? En <b>WITSITE</b> tenemos la página web ideal para ti.</h1>
+          <h3>¿Tu negocio está iniciando? ¿Quieres expandir tu marca? En <b>WITSITE</b> tenemos la página web ideal para ti.</h3>
 
         </div>
       </header>
@@ -42,98 +42,173 @@
 
 
 
-    <!-- FONDO DE PROYECTOS -->
+    <!-- SITIOS WEB -->
 
-    <div class="fondo__proyectos1" id="proyectos"></div>
-    <div class="fondo__proyectos2"></div>
-
-    <!-- PROYECTOS -->
-
-    <div class="content__main--container">
-
-      <h2 class="proyectos--title">Proyectos</h2>
+    <article class="article--web">
 
 
-      <article class="content--container">
-        <section>
-          <img src="/images/ilustracion--1.png" class="content--item" alt="">
-          <h3>Illustración</h3>
-        </section>
-
-        <section>
-          <img src="/images/ilustracion--2.png" class="content--item" alt="">
-          <h3>Illustración</h3>
-        </section>
-
-        <section>
-          <img src="/images/ilustracion--3.png" class="content--item" alt="">
-          <h3>Illustración</h3>
-        </section>
-
-        <section>
-          <img src="/images/ilustracion--1.png" class="content--item" alt="">
-          <h3>Illustración</h3>
-        </section>
-      </article>
-
-    </div>
+      <h1 class="title">Más que sitios web</h1>
 
 
+      <div class="info__main--container">
 
+        <img src="/SVG/cohete.svg" alt="" class="reveal">
 
-
-    <!-- SERVICIOS -->
-
-    <div class="content__main--container2" id="servicios">
-      <div class="content__main--container3">
-
-        <h2 class="servicios--title">Servicios</h2>
-
-
-        <article class="content--container content--container__movil">
-          <section>
-            <img src="/images/servicios--1.png" class="content--item" alt="">
-            <h3>Diseño de Videjuegos</h3>
-          </section>
-
-          <section>
-            <img src="/images/servicios--2.png" class="content--item" alt="">
-            <h3>Desarrollo de Aplicaciones</h3>
-          </section>
-
-          <section>
-            <img src="/images/servicios--3.png" class="content--item" alt="">
-            <h3>Illustración Digital</h3>
-          </section>
-
-          <section>
-            <img src="/images/servicios--4.png" class="content--item" alt="">
-            <h3>Desarrollo Web</h3>
-          </section>
-        </article>
+        <div class="info--container">
+          <h3>Impulsa tu negocio</h3>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui sed aliquet commodo. Ut congue urna tellus, sed varius lectus consequat a. Praesent malesuada rutrum varius. Etiam viverra, turpis eu condimentum dapibus, nibh nisi molestie velit, vel dignissim purus est in sapien. Etiam dignissim, metus vitae tempor fermentum, lectus ex rhoncus lorem, a elementum justo enim a eros. Praesent eu felis at dolor placerat vestibulum. Nullam nec quam malesuada, tempor felis quis, rhoncus magna. Proin ornare sit amet leo id varius. Nulla ut placerat lacus. Curabitur aliquam, elit non luctus maximus, massa urna consectetur ante, id vehicula turpis mauris ac nibh. Duis convallis est ac tincidunt mattis. Sed at tincidunt ligula.</p>
+        </div>
 
       </div>
-    </div>
+
+
+      <section>
+
+        <div class="info__main--container">
+
+          <img src="/SVG/megafono.svg" alt="" class="reveal img--megafono">
+
+          <div class="info--container">
+            <h3>Date a conocer</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui sed aliquet commodo. Ut congue urna tellus, sed varius lectus consequat a. Praesent malesuada rutrum varius. Etiam viverra, turpis eu condimentum dapibus, nibh nisi molestie velit, vel dignissim purus est in sapien. Etiam dignissim, metus vitae tempor fermentum, lectus ex rhoncus lorem, a elementum justo enim a eros. Praesent eu felis at dolor placerat vestibulum. Nullam nec quam malesuada, tempor felis quis, rhoncus magna. Proin ornare sit amet leo id varius. Nulla ut placerat lacus. Curabitur aliquam, elit non luctus maximus, massa urna consectetur ante, id vehicula turpis mauris ac nibh. Duis convallis est ac tincidunt mattis. Sed at tincidunt ligula.</p>
+          </div>
+
+        </div>
+
+
+        <div class="info__main--container">
+
+          <img src="/SVG/cohete.svg" alt="" class="reveal">
+
+          <div class="info--container">
+            <h3>A la medida de tu empresa</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui sed aliquet commodo. Ut congue urna tellus, sed varius lectus consequat a. Praesent malesuada rutrum varius. Etiam viverra, turpis eu condimentum dapibus, nibh nisi molestie velit, vel dignissim purus est in sapien. Etiam dignissim, metus vitae tempor fermentum, lectus ex rhoncus lorem, a elementum justo enim a eros. Praesent eu felis at dolor placerat vestibulum. Nullam nec quam malesuada, tempor felis quis, rhoncus magna. Proin ornare sit amet leo id varius. Nulla ut placerat lacus. Curabitur aliquam, elit non luctus maximus, massa urna consectetur ante, id vehicula turpis mauris ac nibh. Duis convallis est ac tincidunt mattis. Sed at tincidunt ligula.</p>
+          </div>
+
+        </div>
+
+
+        <div class="info__main--container">
+
+          <img src="/SVG/equipo.svg" alt="" class="reveal img--equipo">
+
+          <div class="info--container">
+            <h3>Asesoria</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui sed aliquet commodo. Ut congue urna tellus, sed varius lectus consequat a. Praesent malesuada rutrum varius. Etiam viverra, turpis eu condimentum dapibus, nibh nisi molestie velit, vel dignissim purus est in sapien. Etiam dignissim, metus vitae tempor fermentum, lectus ex rhoncus lorem, a elementum justo enim a eros. Praesent eu felis at dolor placerat vestibulum. Nullam nec quam malesuada, tempor felis quis, rhoncus magna. Proin ornare sit amet leo id varius. Nulla ut placerat lacus. Curabitur aliquam, elit non luctus maximus, massa urna consectetur ante, id vehicula turpis mauris ac nibh. Duis convallis est ac tincidunt mattis. Sed at tincidunt ligula.</p>
+          </div>
+
+        </div>
+
+
+        <div class="btn--more">
+          <a href="#">More</a>
+        </div>
+
+      </section>
+
+    </article>
 
 
 
 
 
-    
-    <!-- FOOTER -->
+    <!-- DISEÑO -->
 
-    <%- include("./partials/footer.html"); %>
+    <h2 class="title title--slider">Ilustraciones</h2>
+
+    <!-- SLIDER -->
+
+    <%- include("./partials/slider.html"); %>
 
 
 
 
 
+    <!-- BRANDING -->
 
-  <!-- Scroll Reveal -->
-  <!-- <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="index.js"></script> -->
+    <article class="article--branding">
+
+      <div class="info__main--container">
+        
+
+        <h2 class="title">Branding</h2>
+        
+
+        <img src="/SVG/diseñar.svg" alt="" class="reveal img--diseñar">
+
+        <div class="info--container">
+          <h3>La imagen también es importante</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui sed aliquet commodo. Ut congue urna tellus, sed varius lectus consequat a. Praesent malesuada rutrum varius. Etiam viverra, turpis eu condimentum dapibus, nibh nisi molestie velit, vel dignissim purus est in sapien. Etiam dignissim, metus vitae tempor fermentum, lectus ex rhoncus lorem, a elementum justo enim a eros. Praesent eu felis at dolor placerat vestibulum. Nullam nec quam malesuada, tempor felis quis, rhoncus magna. Proin ornare sit amet leo id varius. Nulla ut placerat lacus. Curabitur aliquam, elit non luctus maximus, massa urna consectetur ante, id vehicula turpis mauris ac nibh. Duis convallis est ac tincidunt mattis. Sed at tincidunt ligula.</p>
+        </div>
+
+      </div>
+
+
+      <section>
+
+        <div class="info__main--container">
+
+          <img src="/SVG/xd.svg" alt="" class="reveal img--xd">
+
+          <div class="info--container">
+            <h3>Crea tu marca</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui sed aliquet commodo. Ut congue urna tellus, sed varius lectus consequat a. Praesent malesuada rutrum varius. Etiam viverra, turpis eu condimentum dapibus, nibh nisi molestie velit, vel dignissim purus est in sapien. Etiam dignissim, metus vitae tempor fermentum, lectus ex rhoncus lorem, a elementum justo enim a eros. Praesent eu felis at dolor placerat vestibulum. Nullam nec quam malesuada, tempor felis quis, rhoncus magna. Proin ornare sit amet leo id varius. Nulla ut placerat lacus. Curabitur aliquam, elit non luctus maximus, massa urna consectetur ante, id vehicula turpis mauris ac nibh. Duis convallis est ac tincidunt mattis. Sed at tincidunt ligula.</p>
+          </div>
+
+        </div>
+
+
+        <div class="info__main--container">
+
+          <img src="/SVG/muckup.svg" alt="" class="reveal img--muckup">
+
+          <div class="info--container">
+            <h3>interfaz de usuario</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui sed aliquet commodo. Ut congue urna tellus, sed varius lectus consequat a. Praesent malesuada rutrum varius. Etiam viverra, turpis eu condimentum dapibus, nibh nisi molestie velit, vel dignissim purus est in sapien. Etiam dignissim, metus vitae tempor fermentum, lectus ex rhoncus lorem, a elementum justo enim a eros. Praesent eu felis at dolor placerat vestibulum. Nullam nec quam malesuada, tempor felis quis, rhoncus magna. Proin ornare sit amet leo id varius. Nulla ut placerat lacus. Curabitur aliquam, elit non luctus maximus, massa urna consectetur ante, id vehicula turpis mauris ac nibh. Duis convallis est ac tincidunt mattis. Sed at tincidunt ligula.</p>
+          </div>
+
+        </div>
+
+
+        <div class="info__main--container">
+
+          <img src="/SVG/flores.svg" alt="" class="reveal img--flores">
+
+          <div class="info--container">
+            <h3>Diseño e ilustración</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui sed aliquet commodo. Ut congue urna tellus, sed varius lectus consequat a. Praesent malesuada rutrum varius. Etiam viverra, turpis eu condimentum dapibus, nibh nisi molestie velit, vel dignissim purus est in sapien. Etiam dignissim, metus vitae tempor fermentum, lectus ex rhoncus lorem, a elementum justo enim a eros. Praesent eu felis at dolor placerat vestibulum. Nullam nec quam malesuada, tempor felis quis, rhoncus magna. Proin ornare sit amet leo id varius. Nulla ut placerat lacus. Curabitur aliquam, elit non luctus maximus, massa urna consectetur ante, id vehicula turpis mauris ac nibh. Duis convallis est ac tincidunt mattis. Sed at tincidunt ligula.</p>
+          </div>
+
+        </div>
+
+
+        <div class="btn--more">
+          <a href="#">More</a>
+        </div>
+
+
+      </section>
+
+    </article>
 
   </div>
+
+
+
+
+
+  <!-- FOOTER -->
+
+  <%- include("./partials/footer.html"); %>
+
 
 </body>
 </html>

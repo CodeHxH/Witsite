@@ -7,12 +7,14 @@ router.get('/', (req, res) => {
 });
 
 router.post('/send-email', async(req, res) => {
-  const { name, email, phone, message } = req.body;
+  
+  const { name, lastname, email, phone, message } = req.body;
 
   contentHTML = `
   <h1>Información de Usuario</h1>
   <ul>
       <li>Nombre: ${name}</li>
+      <li>Apellido: ${lastname}</li>
       <li>Email: ${email}</li>
       <li>Teléfono: ${phone}</li>
   </ul>
@@ -40,7 +42,7 @@ router.post('/send-email', async(req, res) => {
   });
 
   console.log("Mensaje enviado", info.messageId);
-
+  
   res.redirect("/");
 });
 

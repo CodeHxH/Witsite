@@ -1,37 +1,87 @@
 <!-- FOOTER -->
 
-<div class="footer" id="contacto">
+<div class="form--container" id="contacto">
 
-    <form action="/send-email" method="POST" class="form"> 
-  
-        <h4>¡Envianos un mensaje!</h4>
-  
-        <div>
-            <input type="text" name="name" class="input-form" placeholder="  Nombre">
-            <input type="text" name="email" class="input-form" placeholder="  Email">
-            <input type="text" name="phone" class="input-form" placeholder="  Teléfono">
-            <textarea name="message" rows="2" class="input-form" placeholder="  Escriba su mensaje aquí"></textarea> 
+
+    <h4>Contactanos</h4>
+
+
+    <form action="/send-email" method="POST" class="form">
+        <div class="input__form--container">
+
+            <input type="text" name="name" class="input--form" placeholder="  Nombre">
+            <input type="text" name="lastname" class="input--form" placeholder="  Apellido">
+            <input type="text" name="email" class="input--form" placeholder="  Email">
+            <input type="text" name="phone" class="input--form" placeholder="  Teléfono">
+
+            <textarea name="message" rows="2" class="input--form block" placeholder="  Escriba su mensaje aquí"></textarea> 
+
+            <button class="btn--form block">Enviar</button>
+
         </div>
-  
-        <button class="input--form">Enviar</button>
     </form>
-  
+
+    <div class="info__form--container">
+        
+        <h4>Más información</h4>
+
+        <ul>
+            <li class="fas fa-map-marker-alt"><span>Ciudad Bolívar, Venezuela.</span></li>
+            <li class="fas fa-envelope"><span>onthewitsite@gmail.com</span></li>
+            <li class="fas fa-phone"><span>0414-8780487</span></li>
+        </ul>
+
+        <p class="p--form">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate et magnam repellendus incidunt itaque at dicta culpa saepe assumenda?
+        </p>
+
+        <p>www.witsite.net</p>
+    </div>
+
 </div>
-  
-    <!-- REDES -->
-  
-<div class="redes--container">
-  
-    <ul>
-        <li><a href="https://github.com/CodeHxH" target="_blank"> <img src="/SVG/github.svg" class="redes--item" alt=""> </a></li>
-        <li><a href="https://www.facebook.com/" target="_blank"> <img src="/SVG/facebook.svg" class="redes--item" alt=""> </a></li>
-        <li><a href="https://www.linkedin.com/" target="_blank"> <img src="/SVG/linkedin.svg" class="redes--item" alt=""> </a></li>
-    </ul>
-  
+
+
+
+
+
+<!-- REDES -->
+
+<div class="footer">
+
+    <div class="links--footer">
+        <a href="#">Inicio</a>
+        <a href="#">Sitios web</a>
+        <a href="#">Diseño e ilustración</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Presupuesto</a>
+        <a href="#">Preguntas frecuentes</a>
+    </div>
+
+    <div class="redes--container">
+        <ul>
+
+            <li><a href="https://github.com/CodeHxH" target="_blank"> <img src="/SVG/github.svg" class="redes--item" alt=""> </a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"> <img src="/SVG/facebook.svg" class="redes--item" alt=""> </a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"> <img src="/SVG/linkedin.svg" class="redes--item" alt=""> </a></li>
+
+        </ul>
+    </div>
+
 </div>
-  
+
+
+
+
+
 <!-- COPYRIGHT -->
-  
+
 <div class="copyright">
     <footer>Developed And Designed By <b><a href="mailto:rodriguezjoseagustin31@gmail.com" target="_blank">Agustin R</a></b>. ©2021. All Rights Reserved.</footer>
 </div>
+
+
+
+
+
+<!-- NAV BAR -->
+<script src="/main.js"></script>
