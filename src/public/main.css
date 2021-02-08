@@ -69,6 +69,10 @@ p {
   background-color: #84329b;
 }
 
+.nav--container.open {
+  position: fixed;
+}
+
 nav {
   height: 60px;
   display: flex;

@@ -1,10 +1,12 @@
 //NAVBAR RESPONSIVE
 const btn = document.querySelector(".menu--btn");
 const navLinks = document.querySelector(".nav--menu");
+const nav = document.querySelector(".nav--container");
 //const links = document.querySelectorAll(".nav-links li");
 
 btn.addEventListener("click", () => {
   navLinks.classList.toggle("open");
+  nav.classList.toggle("open");
 });
 
 //SCROLL REVEAL
