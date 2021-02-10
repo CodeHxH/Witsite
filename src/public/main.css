@@ -582,6 +582,85 @@ footer a:hover {
 
 
 
+/* BUDGET */
+
+.budget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.budget--item {
+  color:#000000;
+  background: radial-gradient(#202020, #161616);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 20px 1em;
+}
+
+.budget--input {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.budget--input input {
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  display: flex;
+}
+
+.budget--input input:focus {
+  background: linear-gradient(transparent,rgba(255, 255, 255, 0.171));
+  border-bottom: 2px solid #00c843;
+}
+
+.budget__input--container {
+  display: flex;
+}
+
+.butget--submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.butget--submit button {
+  background-color: #00c843;
+  cursor: pointer;
+  padding: 10px;
+  max-width: 700px;
+  margin: 20px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.butget--submit button:hover {
+  background-color: #00832c;
+  transition: .5s;
+}
+
+.budget--container {
+  padding: 1.5em;
+  max-width: 800px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.budget--container span {
+  font-size: 1.25em;
+}
+
+.img__cohete--budget {
+  width: 150px;
+  margin: 20px 0;
+}
 
 
 
@@ -920,5 +999,12 @@ footer a:hover {
     flex-direction: column;
     align-items: flex-start;
     padding: 60px;
+  }
+
+  /* BUDGET */
+
+  .img__cohete--budget {
+    width: 200px;
+    margin: 20px 0;
   }
 }

@@ -18,6 +18,7 @@ ScrollReveal().reveal('.footer', { delay: 100 });
 ScrollReveal().reveal('.info--container', { delay: 100 });
 ScrollReveal().reveal('.slider--container', { delay: 100 });
 ScrollReveal().reveal('.reveal', { delay: 100 });
+ScrollReveal().reveal('.budget--item', { delay: 100 });
 
 //SLIDER AUTO
 var counter = 1;
