@@ -6,6 +6,10 @@ router.get('/', (req, res) => {
   res.render("index.html");
 });
 
+router.get('/message', (req, res) => {
+  res.render("message.html");
+});
+
 router.post('/send-email', async(req, res) => {
   
   const { name, lastname, email, phone, message } = req.body;
@@ -120,7 +124,7 @@ router.post('/send-budget', async(req, res) => {
 
   console.log("Mensaje enviado", info.messageId);
   
-  res.redirect("/");
+  res.redirect("/message");
 });
 
 module.exports = router;
