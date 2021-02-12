@@ -10,6 +10,10 @@ router.get('/message', (req, res) => {
   res.render("message.html");
 });
 
+router.get('/about', (req, res) => {
+  res.render("about.html");
+});
+
 router.post('/send-email', async(req, res) => {
   
   const { name, lastname, email, phone, message } = req.body;
@@ -72,9 +76,6 @@ router.post('/send-budget', async(req, res) => {
       <br>
       <h3>¿Tu proyecto tiene un logo?</h3>
       <p>${input3}</p>
-      <br>
-      <h3>¿En que sector se ubica tu proyecto?</h3>
-      <p>${input15}</p>
       <br>
       <h3>¿De qué se trata tu proyecto?</h3>
       <p>${input1}</p>

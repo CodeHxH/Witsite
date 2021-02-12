@@ -106,6 +106,7 @@ nav li {
 nav img {
   width: 45px;
   margin: 10px;
+  cursor: pointer;
 }
 
 
@@ -710,6 +711,44 @@ footer a:hover {
 
 
 
+/* ABOUT */
+
+.skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding: 2em;
+}
+
+.skill img {
+  border-radius: 20px;
+}
+
+.about--container {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about img {
+  width: 200px;
+  margin: 1em;
+}
+
+.skill--container h4 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 2em;
+}
+
+
+
 /* VERSIÓN PARA TABLET */
 
 @media screen and (min-width: 540px) {
@@ -811,6 +850,14 @@ footer a:hover {
     flex-direction: column;
     align-items: flex-start;
     padding: 60px;
+  }
+
+  /* ABOUT */
+
+  .skill {
+    grid-template-columns: repeat(3,1fr);
+    gap: 3em;
+    padding: 3em;
   }
 }
 
@@ -1056,5 +1103,13 @@ footer a:hover {
 
   .message--container {
     margin: 50px 0;
+  }
+
+  /* ABOUT */
+
+  .skill {
+    grid-template-columns: repeat(6,1fr);
+    gap: 3em;
+    padding: 3em;
   }
 }
