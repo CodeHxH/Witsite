@@ -38,7 +38,7 @@ indexCtrl.sendEmailContact = async (req, res) => {
 		secure: true,
 		auth: {
 			user: 'onthewitsite@gmail.com',
-			pass: process.env.GMAIL_PASSWORD,
+			pass: 'jyntloivjpvmkyrv',
 		},
 		tls: {
 			rejectUnauthorized: false,
@@ -131,7 +131,7 @@ indexCtrl.sendEmailBudget = async (req, res) => {
 		secure: true,
 		auth: {
 			user: 'onthewitsite@gmail.com',
-			pass: process.env.GMAIL_PASSWORD,
+			pass: 'jyntloivjpvmkyrv',
 		},
 		tls: {
 			rejectUnauthorized: false,
