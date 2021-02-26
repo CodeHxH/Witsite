@@ -1,12 +1,12 @@
 //NAVBAR RESPONSIVE
-const btn = document.querySelector(".menu--btn");
-const navLinks = document.querySelector(".nav--menu");
-const nav = document.querySelector(".nav--container");
+const btn = document.querySelector('.menu--btn');
+const navLinks = document.querySelector('.nav--menu');
+const nav = document.querySelector('.nav--container');
 //const links = document.querySelectorAll(".nav-links li");
 
-btn.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-  nav.classList.toggle("open");
+btn.addEventListener('click', () => {
+	navLinks.classList.toggle('open');
+	nav.classList.toggle('open');
 });
 
 //SCROLL REVEAL
@@ -22,11 +22,11 @@ ScrollReveal().reveal('.budget--item', { delay: 100 });
 
 //SLIDER AUTO
 var counter = 1;
-setInterval(function(){
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
+setInterval(function () {
+	document.getElementById('radio' + counter).checked = true;
+	counter++;
 
-  if (counter > 4){
-    counter = 1;
-  };
-},5000);
+	if (counter > 4) {
+		counter = 1;
+	}
+}, 5000);

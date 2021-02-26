@@ -1,30 +1,33 @@
 {
-  "name": "witsite",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src",
-    "dev": "nodemon src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodeHxH/Witsite.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CodeHxH/Witsite/issues"
-  },
-  "homepage": "https://github.com/CodeHxH/Witsite#readme",
-  "dependencies": {
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "nodemailer": "^6.4.17"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+	"name": "witsite",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src",
+		"dev": "nodemon src"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeHxH/Witsite.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/CodeHxH/Witsite/issues"
+	},
+	"homepage": "https://github.com/CodeHxH/Witsite#readme",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"express-handlebars": "^5.2.1",
+		"handlebars": "^4.5.3",
+		"mongoose": "^5.11.18",
+		"morgan": "^1.10.0",
+		"nodemailer": "^6.4.17"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
 }
