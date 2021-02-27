@@ -52,6 +52,8 @@ indexCtrl.sendEmailContact = async (req, res) => {
 		html: contentHTML,
 	});
 
+	console.log('Message sent: %s', info.messageId);
+
 	res.redirect('/');
 };
 
@@ -136,6 +138,8 @@ indexCtrl.sendEmailBudget = async (req, res) => {
 		subject: 'Witsite user',
 		html: contentHTML,
 	});
+
+	console.log('Message sent: %s', info.messageId);
 
 	res.redirect('/message');
 };
