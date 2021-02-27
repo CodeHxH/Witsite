@@ -38,27 +38,19 @@ indexCtrl.sendEmailContact = async (req, res) => {
 		secure: true,
 		auth: {
 			user: 'onthewitsite@gmail.com',
-			pass: 'jyntloivjpvmkyrv',
+			pass: process.env.GMAIL_PASSWORD,
 		},
 		tls: {
 			rejectUnauthorized: false,
 		},
 	});
 
-	const info = await transporter
-		.sendMail({
-			from: '"Witsite user" <onthewitsite@gmail.com>',
-			to: 'rodriguezjoseagustin31@gmail.com',
-			subject: 'Witsite user',
-			html: contentHTML,
-		})
-
-		.then((info) => {
-			if (info.messageId) {
-				console.log('Sending email');
-			}
-		})
-		.catch((err) => console.log(err));
+	const info = await transporter.sendMail({
+		from: '"Witsite user" <onthewitsite@gmail.com>',
+		to: 'rodriguezjoseagustin31@gmail.com',
+		subject: 'Witsite user',
+		html: contentHTML,
+	});
 
 	res.redirect('/');
 };
@@ -131,27 +123,19 @@ indexCtrl.sendEmailBudget = async (req, res) => {
 		secure: true,
 		auth: {
 			user: 'onthewitsite@gmail.com',
-			pass: 'jyntloivjpvmkyrv',
+			pass: process.env.GMAIL_PASSWORD,
 		},
 		tls: {
 			rejectUnauthorized: false,
 		},
 	});
 
-	const info = await transporter
-		.sendMail({
-			from: '"Witsite user" <onthewitsite@gmail.com>',
-			to: 'rodriguezjoseagustin31@gmail.com',
-			subject: 'Witsite user',
-			html: contentHTML,
-		})
-
-		.then((info) => {
-			if (info.messageId) {
-				console.log('Sending email');
-			}
-		})
-		.catch((err) => console.log(err));
+	const info = await transporter.sendMail({
+		from: '"Witsite user" <onthewitsite@gmail.com>',
+		to: 'rodriguezjoseagustin31@gmail.com',
+		subject: 'Witsite user',
+		html: contentHTML,
+	});
 
 	res.redirect('/message');
 };
