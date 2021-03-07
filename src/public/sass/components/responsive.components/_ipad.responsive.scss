@@ -1,0 +1,52 @@
+/* VERSIÓN PARA iPad */
+
+@media screen and (min-width: 768px) {
+	/* HEADER */
+
+	.header--container {
+		background: none;
+	}
+
+	header h2 {
+		font-size: 2em;
+	}
+
+	.header__info--container {
+		margin: 0 4em 3em 4em;
+	}
+
+	/* CONTENIDO */
+
+	article {
+		margin-top: 150px;
+	}
+
+	.slider--container {
+		display: none;
+	}
+
+	section {
+		margin: 3em;
+	}
+
+	.info__main--container {
+		margin: 0 4em 3em 4em;
+	}
+
+	/* FOOTER */
+
+	.links--footer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 60px;
+	}
+
+	/* ABOUT */
+
+	.skill {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3em;
+		padding: 3em;
+	}
+}

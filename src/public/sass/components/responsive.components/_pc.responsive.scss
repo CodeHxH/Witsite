@@ -1,0 +1,234 @@
+/* VERSION PARA PC */
+
+@media screen and (min-width: 1400px) {
+	/* CONTAINER */
+
+	* {
+		font-size: 17px;
+	}
+
+	.container {
+		width: 80%;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	/* NAVEGACIÓN */
+
+	nav {
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.nav--menu {
+		padding: 17px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		background: none;
+		height: fit-content;
+		width: fit-content;
+		position: relative;
+	}
+
+	.nav--menu.open {
+		display: flex;
+	}
+
+	nav li {
+		margin: 0 30px;
+	}
+
+	nav a {
+		font-size: 1em;
+	}
+
+	nav img {
+		width: 45px;
+		margin: 10px;
+	}
+
+	/* BOTÓN DE MENÚ DESPLEGABLE */
+
+	.menu--btn {
+		display: none;
+	}
+
+	/* HEADER */
+
+	.header--container {
+		background: none;
+	}
+
+	header {
+		height: 800px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-around;
+		flex-direction: row-reverse;
+	}
+
+	.logo--container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	header img {
+		width: 350px;
+		margin: 0 140px;
+	}
+
+	.header__info--container {
+		display: flex;
+		flex-shrink: 2;
+		margin: 1em;
+	}
+
+	header h2 {
+		font-size: 3em;
+	}
+
+	/* CONTENIDO */
+
+	article {
+		margin-top: 200px;
+	}
+
+	.slider--container {
+		display: none;
+	}
+
+	.title {
+		font-size: 2.5em;
+	}
+
+	section {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 30px;
+	}
+
+	.info__main--container {
+		display: grid;
+		grid-template-rows: 300px 1fr;
+		margin: 20px;
+	}
+
+	.info__main--container:first-child {
+		margin-bottom: 20px;
+	}
+
+	.info__main--container:nth-child(3) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.together {
+		display: flex;
+		justify-content: center;
+		flex-direction: row-reverse;
+		padding: 4em;
+	}
+
+	.together .info--container {
+		padding: 3em;
+	}
+
+	/* IMAGENES */
+
+	article img {
+		margin: auto;
+	}
+
+	.img--cohete {
+		width: 300px;
+	}
+
+	.img--plano {
+		width: 300px;
+	}
+
+	.img--megafono {
+		width: 300px;
+		margin-top: 0;
+		padding: 20px;
+	}
+
+	.img--equipo {
+		padding: 0;
+		width: 300px;
+	}
+
+	.img--diseñar {
+		width: 300px;
+		padding: 0;
+	}
+
+	.img--grua {
+		padding: 0;
+		margin-top: 0;
+		width: 300px;
+	}
+
+	.img--muckup {
+		width: 300px;
+	}
+
+	.img--flores {
+		width: 120px;
+	}
+
+	/* FORMULARIO */
+
+	.form--container {
+		flex-direction: row;
+		justify-content: center;
+		margin: 0 400px;
+	}
+
+	.form {
+		max-width: 750px;
+		padding: 20px;
+	}
+
+	.info__form--container {
+		max-width: 380px;
+	}
+
+	.form__main--container h4 {
+		margin: 1em 0;
+	}
+
+	/* FOOTER */
+
+	.links--footer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 60px;
+	}
+
+	/* BUDGET */
+
+	.img__cohete--budget {
+		width: 200px;
+		margin: 20px 0;
+	}
+
+	/* MESSAGE */
+
+	.message--container {
+		margin: 50px 0;
+	}
+
+	/* ABOUT */
+
+	.skill {
+		grid-template-columns: repeat(6, 1fr);
+		gap: 3em;
+		padding: 3em;
+	}
+}

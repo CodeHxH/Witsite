@@ -1,0 +1,56 @@
+/* MESSAGE */
+
+.message--container {
+	display: flex;
+	justify-content: center;
+}
+
+.message {
+	padding: 1em;
+	max-width: 1000px;
+	background: radial-gradient(#202020, #161616);
+	border-radius: 15px;
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.message--atte {
+	font-size: 1.25em;
+}
+
+.message--atte i {
+	font-size: 1em;
+}
+
+.message h2 {
+	text-align: center;
+	font-size: 1.5em;
+	margin: 1em;
+}
+
+.message--info {
+	margin: 2em 0;
+}
+
+.message a {
+	font-size: 1.1em;
+}
+
+.btn--more {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.btn--more a {
+	padding: 10px 20px;
+	background-color: #00c843;
+	margin: 1em;
+}
+
+.btn--more a:hover {
+	background-color: #00832c;
+	transition: 0.5s;
+	cursor: pointer;
+}
