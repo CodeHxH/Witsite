@@ -1,0 +1,92 @@
+.carousel {
+	width: 1339px;
+	margin-bottom: 157px;
+	position: relative;
+
+	.glider__item {
+		position: relative;
+		margin: 0 25px;
+
+		img {
+			position: relative;
+			left: 0;
+		}
+	}
+
+	.carousel__back {
+		left: -70px;
+	}
+
+	.carousel__next {
+		right: -70px;
+	}
+
+	button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: none;
+		border: none;
+		cursor: pointer;
+
+		i {
+			font-size: 35px;
+		}
+	}
+}
+
+.proyect__info {
+	background-color: #f3f3f3;
+	position: absolute;
+	right: 0;
+	width: 446.33px;
+	height: 753px;
+	top: 0;
+	padding: 25px;
+
+	* {
+		color: #000;
+	}
+}
+
+.proyect__number {
+	font-size: 116.53px;
+	height: 89px;
+	font-weight: 700;
+	color: #969696;
+	width: 100%;
+	text-align: right;
+	margin-bottom: 385px;
+}
+
+.proyect__name {
+	margin: 0;
+	margin-bottom: 8px;
+	font-size: 27.51px;
+	font-weight: 700;
+}
+
+.proyect__description {
+	line-height: 23.19px;
+	margin: 0;
+	margin-bottom: 37px;
+	width: 316px;
+	font-size: 17px;
+}
+
+.proyect__links {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+
+	.bi-github {
+		margin-right: 23px;
+	}
+
+	i {
+		font-size: 34px;
+		color: #969696;
+	}
+}
