@@ -1,22 +1,29 @@
+{{!-- Header --}}
+
 <header>
     <div class="header__info">
         <p class="header__title">De emprendedores<br><span>Para emprendedores</span></p>
         <p class="header__text">Nuestro equipo está especializado en el desarrollo de aplicaciones y sitios web. Actualmente es cada vez más importante que tu empresa, negocio o servicio tenga presencia en la web, para poder llegar a la mayor cantidad de personas de la manera más eficiente, por eso nosotros trabajamos para hacer un sitio web acorde a tus necesidades.</p>
-        <a class="btn" href="/">
-            contactanos
+        <a class="btn" href="/about">
+          contactanos
         </a>
     </div>
 
     <img src="/svg/logo.svg" alt="logo de witsite" class="header__logo">
 </header>
 
-<i class="bi bi-arrow-down-circle"></i>
+{{!-- Scroll button --}}
+<a href="#carousel" class="scroll"><i class="bi bi-arrow-down-circle"></i></a>
 
-<section class="carousel">
+{{!-- Carousel --}}
+
+<section class="carousel" id="carousel">
+  {{!-- Carousel left arrow --}}
   <button aria-label="Anterior" class="carousel__back">
 		<i class="bi bi-arrow-left-circle"></i>
 	</button>
 
+  {{!-- Carousel items --}}
   <div class="glider">
     <div class="glider__item">
       <img src="/images/proyect1.png" alt="">
@@ -43,11 +50,94 @@
         </ul>
       </div>
     </div>
+    <div class="glider__item">
+      <img src="/images/proyect3.png" alt="">
+      <div class="proyect__info">
+        <div class="proyect__number">03</div>
+        <h6 class="proyect__name left">Galería Dinámica</h6>
+        <p class="proyect__description left">Simple e intuitivo, queremos que incluso el usuario menos relacionado con la tecnología sea capaz de navegar por tu sitio web y entender fácilmente lo que quieres transmitir.</p>
+        <ul class="proyect__links">
+          <li><a href="https://github.com/CodeHxH/Galeria" target="_blank"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://codehxh.github.io/Galeria/" target="_blank"><i class="bi bi-arrow-up-right-square"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
+  {{!-- Carousel right arrow --}}
   <button aria-label="Siguiente" class="carousel__next">
 		<i class="bi bi-arrow-right-circle"></i>
 	</button>
 </section>
 
-<h3 class="title center">Mucho más que sitios web</h3>
+
+{{!-- information cards --}}
+
+<section class="cards">
+
+<h2 class="shadow">Home</h2>
+
+  <h3 class="title center">Mucho más que sitios web</h3>
+
+  <div class="cards__info">
+    <div class="cards__item">
+      <img src="/svg/team.svg" alt="" class="cards__img--team">
+      <div>
+        <h5>Servicio técnico</h5>
+        <p>Nos gusta que las cosas salgan bien, por eso siempre estamos disponibles para solucionar cualquier dificultad técnica que se pueda presentar.</p>
+      </div>
+    </div>  
+
+    <div class="cards__item">
+      <img src="/svg/desing.svg" alt="" class="cards__img--desing">
+      <div>
+        <h5>Diseño e ilustración</h5>
+        <p>Un sitio web no es más que una extención de tu marca, y por eso aprovechamos al maximo la identidad visual para poder transmitir los objetivos de la empresa de manera sencilla, intuitiva y agradable. Un buen diseño en un sitio web marca la diferencia.</p>
+      </div>
+    </div>
+
+    <div class="cards__item">
+      <img src="/svg/mockup.svg" alt="" class="cards__img--mockup">
+      <div>
+        <h5>Interfaz de usuario</h5>
+        <p>Simple e intuitivo, queremos que incluso el usuario menos relacionado con la tecnología sea capaz de navegar por tu sitio web y entender fácilmente lo que quieres transmitir.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards__item--more">
+    <div class="cards__header service">
+      <h4>Nos adaptamos a tus necesidades</h4>
+      <img src="/images/home1.png" alt="">
+    </div>
+    <div class="cards__main service">
+      <h5 class="right">No te detengas</h5>
+      <p>Nos encanta probar cosas nuevas, nunca es un mal momento para innovar e invertir en el desarrollo de tu empresa. Actualmente las tiendas online, las aplicaciones y los sitios web son potentes herramientas para la comunicación, desarrollo y administración de tu empresa, pero sabemos que investigar y desarrollar este tipo de proyectos es bastante complejo y requiere de mucho tiempo, pero no hay problema, nosotros nos encargamos de todo el proceso para que directamente puedas ver los resultados.</p>
+    </div>
+  </div>
+
+  <div class="cards__item--more about">
+    <div class="cards__header about">
+      <h4>Nos encanta nuestro trabajo</h4>
+      <img src="/images/home2.png" alt="">
+    </div>
+    <div class="cards__main about">
+      <h5 class="left">Descubrenos</h5>
+      <p>Nuestra ética de trabajo se basa en el respeto y la confianza. Nuestros clientes son lo más importante, por eso nos esforzamos en darles un servicio profecional y de confianza.</p>
+    </div>
+  </div>
+</section>
+
+{{!-- Scroll button --}}
+<a href="#call" class="scroll"><i class="bi bi-arrow-down-circle"></i></a>
+
+{{!-- Call to action --}}
+
+<div class="call__background">
+  <div class="call__content">
+    <h4 class="title center" id="call">¿Quieres dar un paso más allá?</h4>
+    <a href="/budget" class="btn">pide tu presupuesto</a>
+  </div>
+</div>
+
+{{> footer }}
