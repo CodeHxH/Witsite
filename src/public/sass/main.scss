@@ -1,6 +1,8 @@
 // Variables
 $gray: #1f1f1f;
 $white: #ffffff;
+$error: #ca1517;
+$succes: #47ad3b;
 
 // Components
 @import 'components/global';
@@ -10,3 +12,4 @@ $white: #ffffff;
 @import 'components/cards';
 @import 'components/call';
 @import 'components/footer';
+@import 'components/about';

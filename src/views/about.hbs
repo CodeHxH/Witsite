@@ -1,2 +1,154 @@
-<h1>About</h1>
-<a href="/">Volver al inicio</a>
+<div class="about">
+    {{!-- About witsite --}}
+    <h2 class="title center">Sobre nuestro Witsite</h2>
+
+    <h2 class="subtitle left">Hacemos sitios web</h2>
+
+    <p>Witsite es un proyecto que busca mejorar la interacción de un negocio con sus usuarios mediante sitios web o aplicaciones. Cada negocio es distinto, por eso nos adaptamos a sus necesidades.<br><br>
+
+    Nuestra ética de trabajo se basa en el respeto y la confianza. Nuestros clientes son lo más importante, por eso nos esforzamos en darles un servicio profecional.</p>
+
+    {{!-- Contact info --}}
+    <ul class="about__info">
+        <li><i class="bi bi-geo-alt-fill"></i>&nbsp;<span>Ciudad Bolívar, Venezuela</span>.</li>
+        <li><i class="bi bi-envelope-fill"></i>&nbsp;<span>onthewitsite@gmail.com</span></li>
+        <li><i class="bi bi-telephone-fill"></i>&nbsp;<span>0414-8780487</span></li>
+    </ul>
+
+    {{!-- Work flow --}}
+    <h2 class="subtitle left">Sobre nuestro flujo de trabajo</h2>
+
+    <p>Despues de rellenar el formulario para la solicitud del presupuesto, nosotros le responderemos a su correo, dandole el presupuesto estimado y explicandole como desarrollariamos el proyecto. Si usted esta de acuerdo con nuestra propuesta, nos lo puede confirmar por correo a <span><a href="#">onthewitsite@gmail.com</a></span>
+    o envíar un mensaje desde nuestra <span><a href="#contact">sección de contacto</a></span>.<br><br>
+
+    Seguidamente nosotros agendariamos (según su disponibilidad) una llamada o una videollamada para poder establecer de manera más concreta que caracteristicas debe cumplir el proyecto, como tiene que ser su diseño y bajo que concepto se tiene que crear. En el proceso se le mostraran bocetos rapidos del proyecto en base a sus peticiones.<br><br>
+
+    <span>¿Porqué una videollamada?</span><br>
+    Hacemos esto para asegurarnos de comprender bien lo que usted quiere, y que al final del proceso usted esté satisfecho con el resultado.<br><br>
+
+    Despues de que se llego a un acuerdo con los bocetos, pasamos al maquetado del proyecto, nosotros haremos una ilustración realista del proyecto para que pueda observar como será el resultado final, este proceso dura aproximadamente una semana.<br><br>
+
+    Como paso final le mostraremos la maqueta del proyecto y usted podra intervenir para corregir errores o hacer alguna corrección, después de que usted apruebe la maqueta final, pasaremos al proceso de programación y desarrollo del sitio web o la aplicación para su posterior entrega, la duración de este proceso normalmente varia de dos semanas a un mes dependiendo del proyecto.</p>
+</div>
+
+<div class="contact">
+    {{!-- About me --}}
+    <h3 class="title center">Desarrollador y diseñador de witsite</h3>
+    <h2 class="subtitle center">José Agustin Rodríguez &nbsp;|&nbsp; Front-end Developer</h2>
+
+    <ul>
+        <li><i class="bi bi-circle-fill"></i> Conocimiento de los estándares actuales de&nbsp;<span>HTML</span>,&nbsp;<span>CSS</span>&nbsp;y&nbsp;<span>Javascript</span>.</li>
+        <li><i class="bi bi-circle-fill"></i> Experiencia de front-end con diseño responsive,&nbsp;<span>CSS3</span>,&nbsp;<span>SASS</span>&nbsp;y&nbsp;<span>GSAP</span>.</li>
+        <li><i class="bi bi-circle-fill"></i> Experiencia de back-end con&nbsp;<span>Node.js</span>&nbsp;y&nbsp;<span>Express</span>.</li>
+        <li><i class="bi bi-circle-fill"></i> Habilidades creativas de diseño gráfico y de interfaz de usuario con&nbsp;<span>Figma</span>,&nbsp;<span>Illustrator</span>&nbsp;y código&nbsp;<span>SVG</span>.</li>
+        <li><i class="bi bi-circle-fill"></i> Gestión eficiente del flujo de trabajo con&nbsp;<span>Git</span>.</li>
+        <li id="contact"><i class="bi bi-circle-fill"></i> Administración de bases de datos no relacionales usando&nbsp;<span>MongoDB</span>.</li>
+        <li><i class="bi bi-circle-fill"></i> Actitud positiva, pasión por el aprendizaje de nuevas tecnologias, fuerte ética de trabajo e integridad profesional.</li>
+    </ul>
+
+    <h2 class="shadow shadow__about">About</h2>
+
+    <div class="contact__section">
+        {{!-- Contact form --}}
+        <div class="skills">
+            {{!-- Skill Set --}}
+            <h3 class="center">Skill Set</h3>
+            <div class="skills__icons">
+                <img src="/svg/js.svg" alt="">
+                <img src="/svg/html.svg" alt="">
+                <img src="/svg/css.svg" alt="">
+                <img src="/svg/node.svg" alt="">
+                <img src="/svg/mongo.svg" alt="">
+                <img src="/svg/gsap.svg" alt="">
+                <img src="/svg/git.svg" alt="">
+                <img src="/svg/sass.svg" alt="">
+                <img src="/svg/illustrator.svg" alt="">
+                <img src="/svg/svg.svg" alt="">
+            </div>
+        </div>
+        {{!-- Contact Us --}}
+        <div class="contact__form">
+            <h3 class="center">Contact Us</h3>
+            <form action="/send-budget" method="POST">
+            {{!-- Name group --}}
+                <div class="form__group" id="group__name">
+                    <label for="name">Name</label>
+                    <div class="form__group--input">
+                        <input
+                            type="text"
+                            name="name"
+                            class="input"
+                            id="name"
+                        />
+                        <i class="bi"></i>
+                    </div>
+                    <p class="form__error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+                {{!-- Last group --}}
+                <div class="form__group" id="group__lastname">
+                    <label for="lastname">Lastname</label>
+                    <div class="form__group--input">
+                        <input
+                            type="text"
+                            name="lastname"
+                            class="input"
+                            id="lastname"
+                        />
+                        <i class="bi"></i>
+                    </div>
+                    <p class="form__error"></p>
+                </div>
+                {{!-- Email group --}}
+                <div class="form__group" id="group__email">
+                    <label for="email">Email</label>
+                    <div class="form__group--input">
+                        <input
+                            type="text"
+                            name="email"
+                            class="input"
+                            id="email"
+                        />
+                        <i class="bi"></i>
+                    </div>
+                    <p class="form__error"></p>
+                </div>
+                {{!-- Phone group --}}
+                <div class="form__group" id="group__phone">
+                    <label for="phone">Phone</label>
+                    <div class="form__group--input">
+                        <input
+                            type="text"
+                            name="phone"
+                            class="input"
+                            id="phone"
+                        />
+                        <i class="bi"></i>
+                    </div>
+                    <p class="form__error"></p>
+                </div>
+                {{!-- Message group --}}
+                <div class="form__group--textarea" id="group__message">
+                    <label for="message">Message</label>
+                    <div class="form__group--message">
+                        <textarea
+                            type="text"
+                            name="message"
+                            class="input"
+                            id="message"
+                        />
+                        </textarea>
+                        <i class="bi"></i>
+                    </div>
+                    <p class="form__error"></p>
+                </div>
+                {{!-- Submit Button --}}
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{!-- Quote --}}
+<p class="quote center">“no programamos para solucionar problemas, programamos para crear soluciones”</p>
+
+{{> footer}}

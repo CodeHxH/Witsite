@@ -21,12 +21,10 @@ body {
 	align-items: center;
 }
 
-.bi-arrow-down-circle {
-	font-size: 57px;
-}
-
-.scroll {
-	margin-bottom: 172px;
+button:focus,
+input:focus,
+textarea:focus {
+	outline: none;
 }
 
 li {
@@ -37,6 +35,35 @@ a {
 	text-decoration: none;
 }
 
+// Icons
+.bi-arrow-down-circle {
+	font-size: 57px;
+}
+
+.scroll {
+	margin-bottom: 172px;
+}
+
+// Background shadows
+.shadow {
+	position: absolute;
+	font-size: 305.07px;
+	font-weight: 700;
+	color: #1c1c1c;
+	z-index: -1;
+}
+
+.shadow__home {
+	top: -350px;
+	left: 0;
+}
+
+.shadow__about {
+	top: 100px;
+	left: -200px;
+}
+
+// Btn
 .btn {
 	border: 2px solid #cd83e2;
 	border-radius: 5px;
@@ -46,9 +73,16 @@ a {
 	padding: 12px 27px;
 }
 
+// Text
 .title {
 	font-size: 44.51px;
 	font-weight: 700;
+}
+
+.subtitle {
+	font-size: 27.51px;
+	font-weight: 700;
+	color: #bbbbbb;
 }
 
 .center {

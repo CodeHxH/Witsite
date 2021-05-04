@@ -1,0 +1,211 @@
+.about {
+	width: 931px;
+	line-height: 23.19px;
+	font-weight: 400;
+	margin-bottom: 100px;
+
+	.subtitle {
+		margin-bottom: 15px;
+	}
+
+	h2.title {
+		margin-bottom: 80px;
+	}
+
+	span {
+		font-weight: 700;
+	}
+
+	// Contact Info
+	.about__info {
+		padding: 0;
+		margin-bottom: 50px;
+
+		li {
+			margin-top: 25px;
+
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.contact {
+	position: relative;
+
+	h3.title {
+		font-size: 44.51px;
+		font-weight: 600;
+	}
+
+	h2.subtitle {
+		font-size: 27.51px;
+		font-weight: 700;
+		color: #bbbbbb;
+		margin-top: -20px;
+		margin-bottom: 100px;
+	}
+
+	ul {
+		margin-bottom: 100px;
+
+		li {
+			margin: 30px 0;
+			display: flex;
+			align-items: center;
+
+			i {
+				font-size: 7px;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.quote {
+	color: #bbbbbb;
+	font-size: 27.51px;
+	font-weight: 700;
+	max-width: 843px;
+	margin: 92px 0;
+}
+
+.contact__section {
+	width: 998px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	min-height: 625px;
+
+	button {
+		width: 100%;
+		height: 40px;
+		background: #f3f3f3;
+		border: none;
+		color: #111111;
+		cursor: pointer;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+}
+
+// Skill Set
+.skills {
+	background: #f3f3f3;
+	border-radius: 5px 0 0 5px;
+
+	.skills__icons {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: repeat(3, 75px);
+		row-gap: 50px;
+		column-gap: 75px;
+	}
+
+	h3 {
+		color: #111111;
+		font-weight: 700;
+		margin: 27.51px 0;
+		font-size: 27.51px;
+	}
+}
+
+// Contact form
+.contact__form {
+	background: #111111;
+	border-radius: 0 5px 5px 0;
+	width: 100%;
+
+	h3 {
+		color: #ffffff;
+		font-weight: 700;
+		font-size: 27.51px;
+		margin: 27.51px 0;
+	}
+
+	form {
+		width: 100%;
+		padding: 0 22px;
+	}
+}
+
+// Contact inputs
+.form__group {
+	width: 450px;
+	min-height: 56px;
+	border-bottom: 2px solid #ffffff;
+	margin: 0;
+	margin-bottom: 20px;
+
+	* {
+		width: 100%;
+	}
+
+	div {
+		display: grid;
+		grid-template-columns: 1fr 30px;
+		min-height: 40px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	label {
+		color: #969696;
+		font-size: 14px;
+	}
+
+	input {
+		border: none;
+		background: none;
+		color: #ffffff;
+	}
+}
+
+// Contact textarea
+.form__group--textarea {
+	width: 450px;
+	margin-bottom: 10px;
+
+	label {
+		color: #969696;
+		font-size: 14px;
+	}
+
+	textarea {
+		border: none;
+		width: 100%;
+		border-bottom: 2px solid #ffffff;
+		background: none;
+		height: 140px;
+		color: #ffffff;
+		resize: vertical;
+	}
+}
+
+// Error
+.form__group.error {
+	border-bottom: 2px solid $error;
+}
+
+.bi-x-circle-fill {
+	color: $error;
+	text-align: center;
+}
+
+.form__error {
+	color: $error;
+	font-size: 16px;
+	margin: 5px 0 20px 0;
+	padding-left: 5px;
+	display: none;
+}
+
+// Succes
+.bi-check-circle-fill {
+	color: $succes;
+	text-align: center;
+}
+
+.form__group.succes {
+	border-bottom: 2px solid $succes;
+}
