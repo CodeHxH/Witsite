@@ -1,0 +1,142 @@
+.carousel {
+	width: 1339px;
+	margin-bottom: 157px;
+	position: relative;
+
+	.glider__item {
+		position: relative;
+		margin: 0 25px;
+
+		.proyect__img {
+			position: relative;
+			background: linear-gradient(
+				rgba(25, 209, 231, 0.5),
+				rgba(243, 17, 224, 0.5)
+			);
+			height: 724.88px;
+			object-fit: cover;
+			left: 0;
+		}
+
+		img {
+			transition: 0.5s;
+			opacity: 0.6;
+		}
+	}
+
+	.carousel__back {
+		left: -70px;
+	}
+
+	.carousel__next {
+		right: -70px;
+	}
+
+	button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background: none;
+		border: none;
+		cursor: pointer;
+
+		i {
+			font-size: 2.1875rem;
+		}
+	}
+}
+
+.proyect__info {
+	background-color: #f3f3f3;
+	position: absolute;
+	right: 0;
+	width: 446.33px;
+	height: 724.88px;
+	top: 0;
+	display: grid;
+	grid-template-rows: 83px 1fr 46px 111px 37px 41px;
+	padding: 25px;
+	transition-duration: 0.5s;
+
+	* {
+		color: #000;
+		transition-duration: 0.5s;
+	}
+}
+
+.proyect__number {
+	font-size: 7.2831rem;
+	grid-row: 1/2;
+	font-weight: 700;
+	color: #969696;
+	width: 100%;
+	text-align: right;
+}
+
+.proyect__name {
+	grid-row: 3/4;
+	margin: 0;
+	position: absolute;
+	margin-bottom: 8px;
+	margin-left: 20px;
+	font-size: 1.7194rem;
+	font-weight: 700;
+}
+
+.proyect__description {
+	position: absolute;
+	line-height: 23.19px;
+	grid-row: 4/5;
+	margin: 0;
+	margin-left: 20px;
+	margin-bottom: 37px;
+	width: 316px;
+	font-size: 1.0625rem;
+}
+
+.proyect__links {
+	margin: 0;
+	grid-row: 6/7;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+
+	.bi-github {
+		margin-right: 23px;
+	}
+
+	i {
+		font-size: 2.125rem;
+		color: #969696;
+	}
+}
+
+// Transition
+.glider:hover {
+	img {
+		opacity: 1;
+	}
+
+	.proyect__info {
+		width: 209px;
+	}
+
+	.proyect__number {
+		color: #000000;
+	}
+
+	.proyect__name {
+		color: transparent;
+	}
+
+	.proyect__description {
+		color: transparent;
+	}
+
+	.proyect__links {
+		i {
+			color: #000000;
+		}
+	}
+}

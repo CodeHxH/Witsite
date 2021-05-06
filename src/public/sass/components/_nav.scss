@@ -1,0 +1,26 @@
+nav {
+	margin: auto;
+	height: 80px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.nav__links {
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+		margin-right: 50px;
+		width: 269px;
+	}
+
+	.nav__icon {
+		width: 41px;
+		margin-left: 50px;
+	}
+
+	// Button for small resolutions
+	.nav__btn {
+		display: none;
+	}
+}

@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <!-- Head -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-        name="description"
-        content="Equipo especializado en el desarrollo de aplicaciones y sitios web para negocios y empresas"
-    />
-    <meta
-        name="keywords"
-        content="Website, Witsite, páginas web, Aplicaciones, Desarrollo, Illustración digital"
-    />
-    <meta name="author" content="José Agustin Rodriguez" />
-    <title>Witsite</title>
-    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon" />
-    <!-- Custom css -->
-    <link rel="stylesheet" href="/css/main.css" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap"
-        rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Animate css -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-</head>
+    <head>
+        <!-- Head -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="José Agustin Rodriguez" />
+        <meta
+            name="description"
+            content="Equipo especializado en el desarrollo de aplicaciones y sitios web para negocios y empresas"
+        />
+        <meta
+            name="keywords"
+            content="Website, Witsite, páginas web, Aplicaciones, Desarrollo, Illustración digital"
+        />
+        <title>Witsite</title>
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+        {{!-- Normalize.css --}}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+        <!-- Custom css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+        <link rel="stylesheet" href="/css/main.css"/>
+        {{!-- Bootstrap icons --}}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <!-- Animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
     <body>
 
-        {{>nav}}
-
-        {{{body}}}
+        <div class="container">
+            {{>nav}}
+            {{{body}}}
+        </div>
 
         <!-- Custom js -->
-        <script src="/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+        <script src="/js/main.js"></script>
 
     </body>
 </html>

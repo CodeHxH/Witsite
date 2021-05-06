@@ -1,49 +1,49 @@
-/* FOOTER */
-
-.footer {
-	width: 100%;
-	height: 600px;
-	position: relative;
-	background-color: #84329b;
-	background: radial-gradient(#84329b, #9d3cb8);
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-}
-
-.links--footer > * {
-	margin: 20px;
-}
-
-.links--footer > *:hover {
-	color: #ccc;
-}
-
-.links--footer {
+footer {
+	width: 100vw;
+	height: 162px;
+	background: #84329b;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 60px;
-}
-
-/* REDES */
-
-.redes--container {
-	margin-bottom: 20px;
-	display: flex;
 	justify-content: center;
 }
 
-.redes--container ul li {
-	display: inline-block;
+// Footer's links
+.footer__links {
+	display: grid;
+	grid-template-columns: repeat(3, 33px);
+	gap: 28px;
+
+	i {
+		font-size: 2.0625rem;
+		transition: 0.35s;
+	}
+
+	.bi-github:hover {
+		color: #000000;
+	}
+
+	.bi-instagram:hover {
+		color: #fca218;
+	}
+
+	.bi-linkedin:hover {
+		color: #0579ba;
+	}
 }
 
-.redes--item {
-	width: 40px;
-	margin: 0 10px;
-}
+// Copyright
+.footer__copy {
+	font-weight: 600;
+	margin: 0;
+	margin-top: 26px;
 
-.redes--item:hover {
-	filter: brightness(10%);
-	transition: 0.2s;
+	// Email address
+	a {
+		color: #35e2cd;
+	}
+
+	a:hover {
+		color: #11b8a4;
+	}
 }

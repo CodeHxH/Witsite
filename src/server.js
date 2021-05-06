@@ -1,9 +1,8 @@
 const express = require('express');
-const morgan = require('morgan');
-const path = require('path');
 const exphbs = require('express-handlebars');
 const handlebars = require('handlebars');
-//const { mainModule } = require('process');
+const morgan = require('morgan');
+const path = require('path');
 
 // initialization
 const app = express();

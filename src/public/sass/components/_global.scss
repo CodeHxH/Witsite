@@ -1,52 +1,106 @@
-/* ESTILOS GENERALES */
-
 * {
+	color: $white;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 17px;
 	box-sizing: border-box;
-	color: #fff;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-	background-color: #111111;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23000000' fill-opacity='0.44'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+	background-color: $gray;
+	margin: 0;
+	overflow-x: hidden;
+	font-size: 17px;
 }
 
-a {
-	color: #fff;
-	text-decoration: none;
-	transition: 0.25s;
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-a:hover {
-	color: #ccc;
+button:focus,
+input:focus,
+textarea:focus {
+	outline: none;
 }
 
-ul {
+li {
 	list-style: none;
 }
 
-h3 {
-	text-align: center;
-	margin: 50px 0;
-	font-size: 1.5em;
+a {
+	text-decoration: none;
 }
 
-p {
+// Icons
+.bi-arrow-down-circle {
+	font-size: 3.5625rem;
+}
+
+.scroll {
+	margin-bottom: 172px;
+}
+
+// Background shadows
+.shadow {
+	position: absolute;
+	font-size: 19.0669rem;
+	font-weight: 700;
+	color: #1c1c1c;
+	z-index: -1;
+}
+
+.shadow__home {
+	top: -350px;
+	left: 0;
+}
+
+.shadow__about {
+	top: 100px;
+	left: -200px;
+}
+
+// Btn
+.btn {
+	border: 2px solid #cd83e2;
+	border-radius: 5px;
+	background: none;
+	color: #cd83e2;
+	font-size: 1.5rem;
+	transition: 0.5s;
+	padding: 12px 27px;
+}
+
+.btn:hover {
+	border: 2px solid transparent;
+	background: #cd83e2;
+	color: #1f1f1f;
+}
+
+// Text
+.title {
+	font-size: 2.7819rem;
+	font-weight: 700;
+}
+
+.subtitle {
+	font-size: 1.7194rem;
+	font-weight: 700;
+	color: #bbbbbb;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
 	text-align: left;
-	margin: 1em;
 }
 
-.text-center {
-	text-align: center;
-}
-
-/* CONTAINER */
-
-.container {
-	width: 100%;
-	margin: auto;
-	overflow: hidden;
+.right {
+	text-align: right;
 }

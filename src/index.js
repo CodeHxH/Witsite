@@ -1,7 +1,6 @@
 require('dotenv').config();
 
 const app = require('./server');
-require('./database');
 
 // listening the Server
 app.listen(app.get('port'), () => {
