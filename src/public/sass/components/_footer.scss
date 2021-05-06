@@ -8,22 +8,42 @@ footer {
 	justify-content: center;
 }
 
+// Footer's links
 .footer__links {
 	display: grid;
 	grid-template-columns: repeat(3, 33px);
 	gap: 28px;
 
 	i {
-		font-size: 33px;
+		font-size: 2.0625rem;
+		transition: 0.35s;
+	}
+
+	.bi-github:hover {
+		color: #000000;
+	}
+
+	.bi-instagram:hover {
+		color: #fca218;
+	}
+
+	.bi-linkedin:hover {
+		color: #0579ba;
 	}
 }
 
+// Copyright
 .footer__copy {
 	font-weight: 600;
 	margin: 0;
 	margin-top: 26px;
 
+	// Email address
 	a {
 		color: #35e2cd;
+	}
+
+	a:hover {
+		color: #11b8a4;
 	}
 }

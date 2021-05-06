@@ -1,25 +1,26 @@
-.nav {
-	nav {
-		margin: auto;
-		height: 80px;
-		width: 1803px;
+nav {
+	margin: auto;
+	height: 80px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.nav__links {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		padding: 0;
+		margin-right: 50px;
+		width: 269px;
+	}
 
-		.nav__links {
-			display: flex;
-			justify-content: space-between;
-			padding: 0;
-			width: 269px;
-		}
+	.nav__icon {
+		width: 41px;
+		margin-left: 50px;
+	}
 
-		.nav__icon {
-			width: 41px;
-		}
-
-		.nav__btn {
-			display: none;
-		}
+	// Button for small resolutions
+	.nav__btn {
+		display: none;
 	}
 }

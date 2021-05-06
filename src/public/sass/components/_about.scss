@@ -35,12 +35,12 @@
 	position: relative;
 
 	h3.title {
-		font-size: 44.51px;
+		font-size: 2.7819rem;
 		font-weight: 600;
 	}
 
 	h2.subtitle {
-		font-size: 27.51px;
+		font-size: 1.7194rem;
 		font-weight: 700;
 		color: #bbbbbb;
 		margin-top: -20px;
@@ -56,7 +56,7 @@
 			align-items: center;
 
 			i {
-				font-size: 7px;
+				font-size: 0.4375rem;
 				margin-right: 10px;
 			}
 		}
@@ -65,7 +65,7 @@
 
 .quote {
 	color: #bbbbbb;
-	font-size: 27.51px;
+	font-size: 1.7194rem;
 	font-weight: 700;
 	max-width: 843px;
 	margin: 92px 0;
@@ -87,6 +87,11 @@
 		font-weight: 700;
 		margin-bottom: 15px;
 	}
+
+	button:hover {
+		background: #cfcfcf;
+		transition: 0.5s;
+	}
 }
 
 // Skill Set
@@ -106,7 +111,7 @@
 		color: #111111;
 		font-weight: 700;
 		margin: 27.51px 0;
-		font-size: 27.51px;
+		font-size: 1.7194rem;
 	}
 }
 
@@ -119,7 +124,7 @@
 	h3 {
 		color: #ffffff;
 		font-weight: 700;
-		font-size: 27.51px;
+		font-size: 1.7194rem;
 		margin: 27.51px 0;
 	}
 
@@ -151,7 +156,7 @@
 
 	label {
 		color: #969696;
-		font-size: 14px;
+		font-size: 0.875rem;
 	}
 
 	input {
@@ -194,7 +199,7 @@
 
 .form__error {
 	color: $error;
-	font-size: 16px;
+	font-size: 1rem;
 	margin: 5px 0 20px 0;
 	padding-left: 5px;
 	display: none;

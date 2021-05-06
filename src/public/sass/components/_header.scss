@@ -6,7 +6,11 @@ header {
 	gap: 206px;
 
 	.header__logo {
-		filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
+		transition: 0.5s;
+	}
+
+	.header__logo:hover {
+		filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.75));
 	}
 }
 
@@ -14,7 +18,7 @@ header {
 	.header__title {
 		margin-top: 49px;
 		margin-bottom: 27px;
-		font-size: 72.02px;
+		font-size: 4.5012rem;
 		font-weight: 700;
 
 		* {
@@ -23,7 +27,7 @@ header {
 
 		span {
 			color: #969696;
-			font-size: 72.02px;
+			font-size: 4.5012rem;
 			font-weight: 700;
 		}
 	}

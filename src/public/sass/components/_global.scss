@@ -13,6 +13,7 @@ body {
 	background-color: $gray;
 	margin: 0;
 	overflow-x: hidden;
+	font-size: 17px;
 }
 
 .container {
@@ -37,7 +38,7 @@ a {
 
 // Icons
 .bi-arrow-down-circle {
-	font-size: 57px;
+	font-size: 3.5625rem;
 }
 
 .scroll {
@@ -47,7 +48,7 @@ a {
 // Background shadows
 .shadow {
 	position: absolute;
-	font-size: 305.07px;
+	font-size: 19.0669rem;
 	font-weight: 700;
 	color: #1c1c1c;
 	z-index: -1;
@@ -69,18 +70,25 @@ a {
 	border-radius: 5px;
 	background: none;
 	color: #cd83e2;
-	font-size: 27.51px;
+	font-size: 1.5rem;
+	transition: 0.5s;
 	padding: 12px 27px;
+}
+
+.btn:hover {
+	border: 2px solid transparent;
+	background: #cd83e2;
+	color: #1f1f1f;
 }
 
 // Text
 .title {
-	font-size: 44.51px;
+	font-size: 2.7819rem;
 	font-weight: 700;
 }
 
 .subtitle {
-	font-size: 27.51px;
+	font-size: 1.7194rem;
 	font-weight: 700;
 	color: #bbbbbb;
 }

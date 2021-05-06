@@ -11,3 +11,9 @@ window.addEventListener('load', function () {
 		},
 	});
 });
+
+// ScrollReveal().reveal('.header', { delay: 500 });
+// ScrollReveal().reveal('.carousel', { delay: 500 });
+// ScrollReveal().reveal('.about', { delay: 250 });
+// ScrollReveal().reveal('.contact', { delay: 500 });
+// ScrollReveal().reveal('.contact__section', { delay: 500 });

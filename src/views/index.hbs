@@ -1,6 +1,6 @@
 {{!-- Header --}}
 
-<header>
+<header class="header">
     <div class="header__info">
         <p class="header__title">De emprendedores<br><span>Para emprendedores</span></p>
         <p class="header__text">Nuestro equipo está especializado en el desarrollo de aplicaciones y sitios web. Actualmente es cada vez más importante que tu empresa, negocio o servicio tenga presencia en la web, para poder llegar a la mayor cantidad de personas de la manera más eficiente, por eso nosotros trabajamos para hacer un sitio web acorde a tus necesidades.</p>
@@ -9,7 +9,7 @@
         </a>
     </div>
 
-    <img src="/svg/logo.svg" alt="logo de witsite" class="header__logo">
+    <a href="/about" class="header__logo"><img src="/svg/logo.svg" alt="logo de witsite"></a>
 </header>
 
 {{!-- Scroll button --}}
@@ -26,7 +26,9 @@
   {{!-- Carousel items --}}
   <div class="glider">
     <div class="glider__item">
-      <img src="/images/proyect1.png" alt="">
+      <div class="proyect__img">
+        <img src="/images/proyect1.png" alt="">
+      </div>
       <div class="proyect__info">
         <div class="proyect__number">01</div>
         <h6 class="proyect__name left">Louise’s Roses</h6>
@@ -39,7 +41,9 @@
     </div>
 
     <div class="glider__item">
-      <img src="/images/proyect2.png" alt="">
+      <div class="proyect__img">
+        <img src="/images/proyect2.png" alt="">
+      </div>
       <div class="proyect__info">
         <div class="proyect__number">02</div>
         <h6 class="proyect__name left">Notes app</h6>
@@ -51,7 +55,9 @@
       </div>
     </div>
     <div class="glider__item">
-      <img src="/images/proyect3.png" alt="">
+      <div class="proyect__img">
+        <img src="/images/proyect3.png" alt="">
+      </div>
       <div class="proyect__info">
         <div class="proyect__number">03</div>
         <h6 class="proyect__name left">Galería Dinámica</h6>
@@ -75,7 +81,7 @@
 
 <section class="cards">
 
-<h2 class="shadow shadow__home">Home</h2>
+  <h2 class="shadow shadow__home">Home</h2>
 
   <h3 class="title center">Mucho más que sitios web</h3>
 
@@ -108,7 +114,9 @@
   <div class="cards__item--more">
     <div class="cards__header service">
       <h4>Nos adaptamos a tus necesidades</h4>
-      <img src="/images/home1.png" alt="">
+      <div class="cards__img">
+        <img src="/images/home1.png" alt="">
+      </div>
     </div>
     <div class="cards__main service">
       <h5 class="right">No te detengas</h5>
@@ -119,7 +127,9 @@
   <div class="cards__item--more info">
     <div class="cards__header info">
       <h4>Nos encanta nuestro trabajo</h4>
-      <img src="/images/home2.png" alt="">
+      <div class="cards__img">
+        <img src="/images/home2.png" alt="">
+      </div>
     </div>
     <div class="cards__main info">
       <h5 class="left">Descubrenos</h5>
