@@ -1,5 +1,6 @@
 .call__background {
-	width: 1378px;
+	max-width: 1378px;
+	width: 100vw;
 	height: 689px;
 	display: flex;
 	flex-direction: column;
@@ -15,6 +16,7 @@
 	margin-top: 150px;
 
 	.title {
-		width: 453px;
+		max-width: 453px;
+		width: 100%;
 	}
 }

@@ -48,102 +48,103 @@
 
     <h2 class="shadow shadow__about">About</h2>
 
-    <div class="contact__section">
-        {{!-- Contact form --}}
-        <div class="skills">
-            {{!-- Skill Set --}}
-            <h3 class="center">Skill Set</h3>
-            <div class="skills__icons">
-                <img src="/SVG/js.svg" alt="">
-                <img src="/SVG/html.svg" alt="">
-                <img src="/SVG/css.svg" alt="">
-                <img src="/SVG/node.svg" alt="">
-                <img src="/SVG/mongo.svg" alt="">
-                <img src="/SVG/gsap.svg" alt="">
-                <img src="/SVG/git.svg" alt="">
-                <img src="/SVG/sass.svg" alt="">
-                <img src="/SVG/illustrator.svg" alt="">
-                <img src="/SVG/svg.svg" alt="">
+</div>
+
+<div class="contact__section">
+    {{!-- Contact form --}}
+    <div class="skills">
+        {{!-- Skill Set --}}
+        <h3 class="center">Skill Set</h3>
+        <div class="skills__icons">
+            <img src="/SVG/js.svg" alt="">
+            <img src="/SVG/html.svg" alt="">
+            <img src="/SVG/css.svg" alt="">
+            <img src="/SVG/node.svg" alt="">
+            <img src="/SVG/mongo.svg" alt="">
+            <img src="/SVG/gsap.svg" alt="">
+            <img src="/SVG/git.svg" alt="">
+            <img src="/SVG/sass.svg" alt="">
+            <img src="/SVG/illustrator.svg" alt="">
+            <img src="/SVG/svg.svg" alt="">
+        </div>
+    </div>
+    {{!-- Contact Us --}}
+    <div class="contact__form">
+        <h3 class="center">Contact Us</h3>
+        <form action="/send-budget" method="POST">
+        {{!-- Name group --}}
+            <div class="form__group" id="group__name">
+                <label for="name">Name</label>
+                <div class="form__group--input">
+                    <input
+                        type="text"
+                        name="name"
+                        class="input"
+                        id="name"
+                    />
+                    <i class="bi"></i>
+                </div>
+                <p class="form__error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
             </div>
-        </div>
-        {{!-- Contact Us --}}
-        <div class="contact__form">
-            <h3 class="center">Contact Us</h3>
-            <form action="/send-budget" method="POST">
-            {{!-- Name group --}}
-                <div class="form__group" id="group__name">
-                    <label for="name">Name</label>
-                    <div class="form__group--input">
-                        <input
-                            type="text"
-                            name="name"
-                            class="input"
-                            id="name"
-                        />
-                        <i class="bi"></i>
-                    </div>
-                    <p class="form__error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            {{!-- Last group --}}
+            <div class="form__group" id="group__lastname">
+                <label for="lastname">Lastname</label>
+                <div class="form__group--input">
+                    <input
+                        type="text"
+                        name="lastname"
+                        class="input"
+                        id="lastname"
+                    />
+                    <i class="bi"></i>
                 </div>
-                {{!-- Last group --}}
-                <div class="form__group" id="group__lastname">
-                    <label for="lastname">Lastname</label>
-                    <div class="form__group--input">
-                        <input
-                            type="text"
-                            name="lastname"
-                            class="input"
-                            id="lastname"
-                        />
-                        <i class="bi"></i>
-                    </div>
-                    <p class="form__error"></p>
+                <p class="form__error"></p>
+            </div>
+            {{!-- Email group --}}
+            <div class="form__group" id="group__email">
+                <label for="email">Email</label>
+                <div class="form__group--input">
+                    <input
+                        type="text"
+                        name="email"
+                        class="input"
+                        id="email"
+                    />
+                    <i class="bi"></i>
                 </div>
-                {{!-- Email group --}}
-                <div class="form__group" id="group__email">
-                    <label for="email">Email</label>
-                    <div class="form__group--input">
-                        <input
-                            type="text"
-                            name="email"
-                            class="input"
-                            id="email"
-                        />
-                        <i class="bi"></i>
-                    </div>
-                    <p class="form__error"></p>
+                <p class="form__error"></p>
+            </div>
+            {{!-- Phone group --}}
+            <div class="form__group" id="group__phone">
+                <label for="phone">Phone</label>
+                <div class="form__group--input">
+                    <input
+                        type="text"
+                        name="phone"
+                        class="input"
+                        id="phone"
+                    />
+                    <i class="bi"></i>
                 </div>
-                {{!-- Phone group --}}
-                <div class="form__group" id="group__phone">
-                    <label for="phone">Phone</label>
-                    <div class="form__group--input">
-                        <input
-                            type="text"
-                            name="phone"
-                            class="input"
-                            id="phone"
-                        />
-                        <i class="bi"></i>
-                    </div>
-                    <p class="form__error"></p>
+                <p class="form__error"></p>
+            </div>
+            {{!-- Message group --}}
+            <div class="form__group--textarea" id="group__message">
+                <label for="message">Message</label>
+                <div class="form__group--message">
+                    <textarea
+                        type="text"
+                        name="message"
+                        class="input"
+                        id="message"
+                    /></textarea>
+                    <i class="bi"></i>
                 </div>
-                {{!-- Message group --}}
-                <div class="form__group--textarea" id="group__message">
-                    <label for="message">Message</label>
-                    <div class="form__group--message">
-                        <textarea
-                            type="text"
-                            name="message"
-                            class="input"
-                            id="message"
-                        /></textarea>
-                        <i class="bi"></i>
-                    </div>
-                    <p class="form__error"></p>
-                </div>
-                {{!-- Submit Button --}}
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+                <p class="form__error"></p>
+            </div>
+            {{!-- Submit Button --}}
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </div>
 

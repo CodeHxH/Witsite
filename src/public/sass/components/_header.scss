@@ -3,7 +3,7 @@ header {
 	margin-bottom: 115px;
 	display: grid;
 	grid-template-columns: 852px 363px;
-	gap: 206px;
+	column-gap: 206px;
 
 	.header__logo {
 		transition: 0.5s;
@@ -16,7 +16,7 @@ header {
 
 .header__info {
 	.header__title {
-		margin-top: 49px;
+		margin-top: 0;
 		margin-bottom: 27px;
 		font-size: 4.5012rem;
 		font-weight: 700;

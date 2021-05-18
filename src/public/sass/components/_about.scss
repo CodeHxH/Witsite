@@ -1,5 +1,7 @@
 .about {
-	width: 931px;
+	max-width: 931px;
+	padding: 2rem;
+	width: 100vw;
 	line-height: 23.19px;
 	font-weight: 400;
 	margin-bottom: 100px;
@@ -32,6 +34,9 @@
 }
 
 .contact {
+	max-width: 931px;
+	padding: 2rem;
+	width: 100vw;
 	position: relative;
 
 	h3.title {
@@ -72,9 +77,11 @@
 }
 
 .contact__section {
-	width: 998px;
+	max-width: 998px;
+	width: 100vw;
+	padding: 2rem;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 494fr);
 	min-height: 625px;
 
 	button {
