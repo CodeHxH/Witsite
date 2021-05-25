@@ -9,6 +9,8 @@ const {
 	renderBudget,
 } = require('../controllers/index.controllers');
 
+const { formIsAuthenticated } = require('../helpers/auth');
+
 router.get('/', renderIndex);
 
 router.get('/about', renderAbout);
@@ -17,7 +19,7 @@ router.get('/budget', renderBudget);
 
 router.get('/message', renderMessage);
 
-router.post('/send-email', sendEmailContact);
+router.post('/send-email', formIsAuthenticated, sendEmailContact);
 
 router.post('/send-budget', sendEmailBudget);
 

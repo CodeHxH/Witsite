@@ -214,6 +214,14 @@
 	display: none;
 }
 
+.form__error.error {
+	color: $error;
+	font-size: 1rem;
+	margin: 5px 0 20px 0;
+	padding-left: 5px;
+	display: flex;
+}
+
 // Succes
 .bi-check-circle-fill {
 	color: $succes;
