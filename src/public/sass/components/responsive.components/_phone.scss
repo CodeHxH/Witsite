@@ -1,2 +1,323 @@
 @media screen and (max-width: 599px) {
+	* {
+		font-size: 14px;
+	}
+
+	nav {
+		margin: auto;
+		height: 80px;
+		width: 100vw;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.nav__links {
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+			margin-right: 20px;
+			width: 269px;
+		}
+
+		.nav__icon {
+			width: 41px;
+			margin-left: 20px;
+		}
+
+		// Button for small resolutions
+		.nav__btn {
+			display: none;
+		}
+	}
+
+	.shadow {
+		font-size: 2.0669rem;
+		display: none;
+	}
+
+	.scroll {
+		display: none;
+	}
+
+	header {
+		margin-top: 0;
+		margin-bottom: 0;
+		display: grid;
+		padding: 2rem;
+		grid-template-rows: 363px 452px;
+		grid-template-columns: 300px;
+		column-gap: 0;
+
+		.header__logo {
+			grid-row: 1/2;
+			max-width: 100vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			* {
+				margin: auto;
+				max-width: 250px;
+			}
+		}
+	}
+
+	.header__info {
+		grid-row: 2/3;
+
+		.header__title {
+			margin-top: 0;
+			margin-bottom: 0px;
+			font-size: 2rem;
+
+			* {
+				line-height: 50.75px;
+			}
+
+			span {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	// Carousel
+	.carousel {
+		width: 300px;
+		margin-bottom: 50px;
+		position: relative;
+
+		.glider__item {
+			position: relative;
+			margin: 0 25px;
+
+			.proyect__img {
+				width: 100%;
+				background: linear-gradient(
+					rgba(25, 209, 231, 0.5),
+					rgba(243, 17, 224, 0.5)
+				);
+				height: 300px;
+				left: 0;
+			}
+		}
+
+		button {
+			display: none;
+		}
+	}
+
+	.proyect__info {
+		top: 0;
+		width: 25%;
+		display: none;
+		height: 300px;
+		grid-template-rows: 83px 1fr 41px;
+	}
+
+	.proyect__number {
+		font-size: 4.2831rem;
+		color: #969696;
+		margin: 0;
+		display: none;
+	}
+
+	.proyect__name {
+		display: none;
+	}
+
+	.proyect__description {
+		display: none;
+	}
+
+	.glider:hover {
+		.proyect__info {
+			width: 25%;
+		}
+	}
+
+	// Cards
+	.cards {
+		margin-bottom: 179px;
+
+		.title.center {
+			margin-bottom: 100px;
+		}
+	}
+
+	.cards__info {
+		justify-content: center;
+		grid-template-columns: 0.75fr;
+		grid-template-rows: repeat(3, 500px);
+		margin-bottom: 25px;
+		padding: 0 0;
+	}
+
+	.cards__item {
+		padding: 0 20px;
+	}
+
+	// Segunda sección de targetas.
+	.cards__item--more {
+		max-width: 600px;
+	}
+
+	.cards__header {
+		width: 100%;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+
+		h4 {
+			font-size: 2.0819rem;
+			width: 100%;
+			margin-bottom: 30px;
+			font-weight: 700;
+		}
+
+		.cards__img {
+			width: 280px;
+			height: 200px;
+		}
+
+		img {
+			height: 200px;
+			object-fit: cover;
+			width: 280px;
+		}
+	}
+
+	.cards__header.service {
+		align-items: flex-start;
+
+		h4 {
+			text-align: left;
+		}
+	}
+
+	.cards__header.info {
+		align-items: flex-start;
+
+		h4 {
+			text-align: left;
+		}
+	}
+
+	.cards__main {
+		max-width: 896px;
+		width: 100%;
+		padding: 2rem;
+
+		position: relative;
+		bottom: 0;
+
+		h5 {
+			margin: 0;
+			font-size: 1.7194rem;
+			font-weight: 700;
+		}
+
+		p {
+			line-height: 23.19px;
+			border-radius: 5px;
+			box-shadow: 0px 7px 15px 10px rgba(0, 0, 0, 0.25);
+			background: #111111;
+			padding: 24px;
+			margin: 0;
+			margin-top: 16px;
+		}
+	}
+
+	.cards__main.service {
+		right: 0;
+
+		.right {
+			text-align: left;
+		}
+	}
+
+	.cards__item--more.info {
+		margin-top: 0;
+	}
+
+	// About
+	.contact__section {
+		padding: 2rem;
+		justify-content: center;
+		grid-template-columns: 300px;
+		grid-template-rows: 500px 633px;
+
+		// Skill Set
+		.skills {
+			border-radius: 5px 5px 0 0;
+
+			.skills__icons {
+				row-gap: 30px;
+				column-gap: 15px;
+			}
+		}
+
+		// Contact form
+		.contact__form {
+			border-radius: 0 0 5px 5px;
+		}
+
+		// Contact inputs
+		.form__group {
+			width: 260px;
+			min-height: 56px;
+			border-bottom: 2px solid #ffffff;
+			margin: 0;
+			margin-bottom: 20px;
+
+			* {
+				width: 100%;
+			}
+
+			div {
+				display: grid;
+				grid-template-columns: 1fr 30px;
+				min-height: 40px;
+				align-items: center;
+				justify-content: center;
+			}
+
+			label {
+				color: #969696;
+				font-size: 0.875rem;
+			}
+
+			input {
+				border: none;
+				background: none;
+				color: #ffffff;
+			}
+		}
+
+		// Contact textarea
+		.form__group--textarea {
+			width: 260px;
+			margin-bottom: 10px;
+
+			label {
+				color: #969696;
+				font-size: 14px;
+			}
+
+			textarea {
+				border: none;
+				width: 100%;
+				border-bottom: 2px solid #ffffff;
+				background: none;
+				height: 140px;
+				color: #ffffff;
+				resize: vertical;
+			}
+		}
+	}
+
+	.form__group--textarea {
+		textarea {
+			resize: none;
+		}
+	}
 }
