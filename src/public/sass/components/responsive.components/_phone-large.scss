@@ -1,4 +1,4 @@
-@media screen and (max-width: 373px) {
+@media screen and (min-width: 374px) and (max-width: 599px) {
 	* {
 		font-size: 14px;
 	}
@@ -45,7 +45,7 @@
 		display: grid;
 		padding: 2rem;
 		grid-template-rows: 363px 452px;
-		grid-template-columns: 300px;
+		grid-template-columns: 350px;
 		column-gap: 0;
 
 		.header__logo {
@@ -82,7 +82,7 @@
 
 	// Carousel
 	.carousel {
-		width: 300px;
+		width: 360px;
 		margin-bottom: 50px;
 		position: relative;
 
@@ -156,6 +156,7 @@
 			display: flex;
 		}
 	}
+
 	// Cards
 	.cards {
 		margin-bottom: 179px;
@@ -196,14 +197,14 @@
 		}
 
 		.cards__img {
-			width: 280px;
+			width: 370px;
 			height: 200px;
 		}
 
 		img {
 			height: 200px;
 			object-fit: cover;
-			width: 280px;
+			width: 370px;
 		}
 	}
 
