@@ -40,16 +40,13 @@ a {
 	font-size: 3.5625rem;
 }
 
-.scroll {
-	margin-bottom: 172px;
-}
-
 // Background shadows
 .shadow {
 	position: absolute;
 	font-size: 19.0669rem;
 	font-weight: 700;
 	color: #1c1c1c;
+	display: none;
 	z-index: -1;
 }
 

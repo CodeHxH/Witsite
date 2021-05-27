@@ -1,7 +1,8 @@
 .call__background {
 	max-width: 1378px;
-	width: 100vw;
+	width: 100%;
 	height: 689px;
+	margin-top: 172px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,6 +13,7 @@
 .call__content {
 	display: flex;
 	flex-direction: column;
+	padding: $padding;
 	align-items: center;
 	margin-top: 150px;
 

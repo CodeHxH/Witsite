@@ -3,6 +3,7 @@ $gray: #1f1f1f;
 $white: #ffffff;
 $error: #ca1517;
 $succes: #47ad3b;
+$padding: 2rem;
 
 // Components
 @import 'components/global';
@@ -14,7 +15,6 @@ $succes: #47ad3b;
 @import 'components/footer';
 @import 'components/about';
 // Responsive components
-@import 'components/responsive.components/pc-small';
+@import 'components/responsive.components/pc';
 @import 'components/responsive.components/tablet';
 @import 'components/responsive.components/phone';
-@import 'components/responsive.components/phone-large';

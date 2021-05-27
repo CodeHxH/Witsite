@@ -1,12 +1,20 @@
 header {
 	margin-top: 194px;
 	margin-bottom: 115px;
-	display: grid;
-	grid-template-columns: 852px 363px;
-	column-gap: 206px;
+	max-width: 1421px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 $padding;
 
 	.header__logo {
 		transition: 0.5s;
+
+		img {
+			max-width: 363px;
+			width: 363px;
+			margin-left: 2rem;
+		}
 	}
 
 	.header__logo:hover {
@@ -15,6 +23,9 @@ header {
 }
 
 .header__info {
+	max-width: 852px;
+	width: 100%;
+
 	.header__title {
 		margin-top: 0;
 		margin-bottom: 27px;

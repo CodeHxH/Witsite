@@ -1,230 +1,112 @@
-@media screen and (min-width: 600px) and (max-width: 1019px) {
-	* {
-		font-size: 16px;
-	}
-
-	.shadow {
-		font-size: 10.0669rem;
-	}
-
-	.scroll {
-		display: none;
-	}
-
+@media screen and (max-width: 1023px) {
 	header {
-		margin-top: 0;
-		margin-bottom: 0;
-		display: grid;
-		padding: 2rem;
-		grid-template-rows: 363px 452px;
-		grid-template-columns: 550px;
-		column-gap: 0;
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-top: 3rem;
 
 		.header__logo {
-			grid-row: 1/2;
-			max-width: 100vw;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			* {
-				margin: auto;
-				max-width: 250px;
+			img {
+				margin: 6rem;
+				min-width: 300px;
 			}
 		}
 	}
 
-	.header__info {
-		grid-row: 2/3;
-
-		.header__title {
-			margin-top: 0;
-			margin-bottom: 27px;
-			font-size: 3.5012rem;
-
-			* {
-				line-height: 75.75px;
-			}
-
-			span {
-				font-size: 3.5012rem;
-			}
-		}
-	}
-
-	// Carousel
 	.carousel {
-		width: 600px;
-		margin-bottom: 50px;
-		position: relative;
-
-		.glider__item {
-			position: relative;
-			margin: 0 25px;
-
-			.proyect__img {
-				width: 100%;
-				background: linear-gradient(
-					rgba(25, 209, 231, 0.5),
-					rgba(243, 17, 224, 0.5)
-				);
-				height: 300px;
-				left: 0;
-			}
-		}
+		max-width: 100%;
 
 		button {
 			display: none;
 		}
-	}
 
-	.proyect__info {
-		top: 0;
-		width: 25%;
-		height: 300px;
-		grid-template-rows: 83px 1fr 41px;
-	}
-
-	.proyect__number {
-		font-size: 4.2831rem;
-		color: #969696;
-		margin: 0;
-	}
-
-	.proyect__name {
-		display: none;
-	}
-
-	.proyect__description {
-		display: none;
-	}
-
-	.glider:hover {
-		.proyect__info {
-			width: 25%;
+		.glider__item {
+			.proyect__img {
+				img {
+					opacity: 1;
+				}
+			}
 		}
 	}
 
-	// Cards
-	.cards {
-		margin-bottom: 179px;
+	.proyect__info {
+		width: 23%;
 
-		.title.center {
-			margin-bottom: 100px;
+		.proyect__name {
+			color: #000000;
+			display: none;
+		}
+
+		.proyect__description {
+			color: #000000;
+			display: none;
+		}
+	}
+
+	// Transition
+	.glider:hover {
+		.proyect__info {
+			width: 50%;
+		}
+
+		.proyect__name {
+			color: #000000;
+			display: inline;
+		}
+
+		.proyect__description {
+			color: #000000;
+			display: inline;
 		}
 	}
 
 	.cards__info {
-		justify-content: center;
-		grid-template-columns: 0.75fr;
-		grid-template-rows: repeat(3, 500px);
-		margin-bottom: 25px;
-	}
-
-	// Segunda sección de targetas.
-	.cards__item--more {
-		max-width: 600px;
-	}
-
-	.cards__header {
-		width: 100%;
-		padding: 2rem;
-		display: flex;
 		flex-direction: column;
+		align-items: center;
+	}
 
-		h4 {
-			font-size: 2.0819rem;
-			width: 100%;
-			margin-bottom: 30px;
-			font-weight: 700;
-		}
+	.cards__item {
+		margin: $padding;
+		max-width: 450px;
+	}
 
-		.cards__img {
-			width: 550px;
-			height: 300px;
-		}
+	.cards__item:nth-child(2) {
+		margin: $padding;
+	}
 
-		img {
-			height: 300px;
-			object-fit: cover;
-			width: 550px;
-		}
+	.cards__main {
+		position: relative;
+		bottom: 0;
 	}
 
 	.cards__header.service {
-		align-items: flex-start;
+		align-items: center;
 
 		h4 {
-			text-align: left;
+			text-align: center;
 		}
 	}
 
 	.cards__header.info {
-		align-items: flex-start;
+		align-items: center;
 
 		h4 {
-			text-align: left;
-		}
-	}
-
-	.cards__main {
-		max-width: 896px;
-		width: 100%;
-		padding: 2rem;
-
-		position: relative;
-		bottom: 0;
-
-		h5 {
-			margin: 0;
-			font-size: 1.7194rem;
-			font-weight: 700;
-		}
-
-		p {
-			line-height: 23.19px;
-			border-radius: 5px;
-			box-shadow: 0px 7px 15px 10px rgba(0, 0, 0, 0.25);
-			background: #111111;
-			padding: 24px;
-			margin: 0;
-			margin-top: 16px;
+			text-align: center;
 		}
 	}
 
 	.cards__main.service {
-		right: 0;
-
-		.right {
+		h5.right {
 			text-align: left;
 		}
 	}
 
-	.cards__item--more.info {
-		margin-top: 0;
+	// Skill Set
+	.skills {
+		border-radius: 5px 5px 0 0;
 	}
 
-	// About
-	.contact__section {
-		padding: 2rem;
-		justify-content: center;
-		grid-template-columns: 494px;
-		grid-template-rows: repeat(2, 633px);
-
-		// Skill Set
-		.skills {
-			border-radius: 5px 5px 0 0;
-		}
-
-		// Contact form
-		.contact__form {
-			border-radius: 0 0 5px 5px;
-		}
-	}
-
-	.form__group--textarea {
-		textarea {
-			resize: none;
-		}
+	// Contact form
+	.contact__form {
+		border-radius: 0 0 5px 5px;
 	}
 }

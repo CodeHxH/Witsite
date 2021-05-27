@@ -1,25 +1,26 @@
 .about {
 	max-width: 931px;
-	padding: 2rem;
-	width: 100vw;
+	width: 100%;
+	margin-bottom: 100px;
+	padding: $padding;
 	line-height: 23.19px;
 	font-weight: 400;
-	margin-bottom: 100px;
-
-	.subtitle {
-		margin-bottom: 15px;
-	}
 
 	h2.title {
 		margin-bottom: 80px;
+		// change
 		line-height: 50px;
+	}
+
+	.subtitle {
+		margin-bottom: 15px;
 	}
 
 	span {
 		font-weight: 700;
 	}
 
-	// Contact Info
+	// About Info
 	.about__info {
 		padding: 0;
 		margin-bottom: 50px;
@@ -36,31 +37,37 @@
 
 .contact {
 	max-width: 931px;
-	padding: 2rem;
-	width: 100vw;
+	padding: $padding;
+	width: 100%;
 	position: relative;
 
 	h3.title {
-		font-size: 2.7819rem;
 		font-weight: 600;
+		margin-bottom: 0;
 	}
 
 	h2.subtitle {
-		font-size: 1.7194rem;
-		font-weight: 700;
 		color: #bbbbbb;
-		margin-top: -20px;
 		margin-bottom: 100px;
 	}
 
 	ul {
+		max-width: 931px;
+		width: 100%;
 		margin-bottom: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
 
 		li {
-			margin: 30px 0;
+			max-width: 800px;
+			width: 100%;
+			margin: 15px 0;
 			display: flex;
 			align-items: center;
 
+			// Dot
 			i {
 				font-size: 0.4375rem;
 				margin-right: 10px;
@@ -69,22 +76,13 @@
 	}
 }
 
-.quote {
-	color: #bbbbbb;
-	font-size: 1.7194rem;
-	font-weight: 700;
-	max-width: 843px;
-	margin: 92px 0;
-	padding: 0 1rem;
-}
-
 .contact__section {
 	max-width: 998px;
 	width: 100vw;
-	padding: 2rem;
-	display: grid;
-	grid-template-columns: repeat(2, 494fr);
-	min-height: 625px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: $padding;
 
 	button {
 		width: 100%;
@@ -106,14 +104,17 @@
 // Skill Set
 .skills {
 	background: #f3f3f3;
+	max-width: 465px;
+	width: 100%;
+	min-height: 625px;
 	border-radius: 5px 0 0 5px;
 
 	.skills__icons {
+		padding: $padding;
 		display: grid;
-		justify-content: center;
+		justify-content: space-between;
 		grid-template-columns: repeat(3, 75px);
 		row-gap: 50px;
-		column-gap: 75px;
 	}
 
 	h3 {
@@ -127,8 +128,10 @@
 // Contact form
 .contact__form {
 	background: #111111;
+	max-width: 465px;
+	width: 100vw;
+	min-height: 625px;
 	border-radius: 0 5px 5px 0;
-	width: 100%;
 
 	h3 {
 		color: #ffffff;
@@ -138,14 +141,15 @@
 	}
 
 	form {
+		max-width: 465px;
 		width: 100%;
-		padding: 0 22px;
+		padding: 0 1rem;
 	}
 }
 
 // Contact inputs
 .form__group {
-	width: 450px;
+	width: 100%;
 	min-height: 56px;
 	border-bottom: 2px solid #ffffff;
 	margin: 0;
@@ -155,17 +159,17 @@
 		width: 100%;
 	}
 
-	div {
+	label {
+		color: #969696;
+		font-size: 0.875rem;
+	}
+
+	div.form__group--input {
 		display: grid;
 		grid-template-columns: 1fr 30px;
 		min-height: 40px;
 		align-items: center;
 		justify-content: center;
-	}
-
-	label {
-		color: #969696;
-		font-size: 0.875rem;
 	}
 
 	input {
@@ -176,19 +180,12 @@
 }
 
 // Contact textarea
-.form__group--textarea {
-	width: 450px;
+.textarea {
 	margin-bottom: 10px;
-
-	label {
-		color: #969696;
-		font-size: 14px;
-	}
 
 	textarea {
 		border: none;
 		width: 100%;
-		border-bottom: 2px solid #ffffff;
 		background: none;
 		height: 140px;
 		color: #ffffff;
@@ -230,4 +227,13 @@
 
 .form__group.succes {
 	border-bottom: 2px solid $succes;
+}
+
+.quote {
+	color: #bbbbbb;
+	font-size: 1.7194rem;
+	font-weight: 700;
+	max-width: 840px;
+	margin: 92px 0;
+	padding: 0 $padding;
 }

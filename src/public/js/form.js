@@ -33,9 +33,9 @@ const validateField = (expression, input, field) => {
 		document
 			.querySelector(`#group__${field} i`)
 			.classList.remove('bi-x-circle-fill');
-		//document
-		//.querySelector(`#group__${field} .form__error`)
-		//.classList.remove('error');
+		document
+			.querySelector(`#group__${field} .form__error`)
+			.classList.remove('error');
 
 		fields[field] = true;
 	} else {
@@ -50,9 +50,9 @@ const validateField = (expression, input, field) => {
 		document
 			.querySelector(`#group__${field} i`)
 			.classList.remove('bi-check-circle-fill');
-		//document
-		//.querySelector(`#group__${field} .form__error`)
-		//.classList.add('error');
+		document
+			.querySelector(`#group__${field} .form__error`)
+			.classList.add('error');
 
 		fields[field] = false;
 	}
