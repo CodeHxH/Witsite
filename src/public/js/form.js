@@ -14,6 +14,7 @@ const fields = {
 	lastname: false,
 	email: false,
 	phone: false,
+
 	clientName: false,
 	clientLastname: false,
 	clientEmail: false,

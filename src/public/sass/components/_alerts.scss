@@ -1,0 +1,47 @@
+.alert {
+	.alert__item {
+		background-color: rgb(238, 238, 238);
+		max-width: 600px;
+		height: 73px;
+		width: 90vw;
+		position: relative;
+		box-shadow: 0 0 5px #000;
+		border-radius: 5px;
+		padding: 1rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		button {
+			border: none;
+			cursor: pointer;
+
+			i {
+				font-size: 1.5em;
+			}
+		}
+
+		button:focus {
+			border: none;
+		}
+	}
+
+	.alert__item--success {
+		p,
+		i {
+			color: rgb(32, 204, 70);
+		}
+	}
+
+	.alert__item--danger {
+		p,
+		i {
+			color: rgb(240, 60, 60);
+		}
+	}
+}
+
+// Add class close
+.alert.close {
+	display: none;
+}

@@ -43,9 +43,10 @@ helpers.formIsAuthenticated = (req, res, next) => {
 		fields.phone &&
 		fields.message
 	) {
+		req.flash('success_msg', 'Su mensaje ha sido enviado');
 		return next();
 	} else {
-		//req.flash('error_msg', 'El mensaje no se ha podido enviar');
+		req.flash('error_msg', 'Su mensaje no se ha podido enviar');
 		res.redirect('/about');
 	}
 };

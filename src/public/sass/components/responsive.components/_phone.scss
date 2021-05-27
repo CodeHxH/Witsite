@@ -2,7 +2,7 @@
 	$padding: 1rem;
 
 	* {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.bi-arrow-down-circle {
@@ -74,11 +74,31 @@
 	.header__info {
 		.header__title {
 			margin-bottom: 17px;
-			font-size: 2rem;
+			font-size: 2.45rem;
 
 			* {
 				line-height: 50.75px;
 			}
+
+			span {
+				font-size: 2.45rem;
+			}
+		}
+	}
+
+	.proyect__info {
+		width: 50%;
+
+		.proyect__number {
+			font-size: 5.2831rem;
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.header__info {
+		.header__title {
+			font-size: 2rem;
 
 			span {
 				font-size: 2rem;
@@ -86,12 +106,6 @@
 		}
 	}
 
-	.proyect__info {
-		width: 50%;
-	}
-}
-
-@media screen and (max-width: 320px) {
 	.proyect__info {
 		width: 50%;
 	}

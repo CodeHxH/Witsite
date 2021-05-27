@@ -12,6 +12,12 @@ window.addEventListener('load', function () {
 	});
 });
 
+// Cerrando ventanas de alerta
+function closeAlert() {
+	const closeAlert = document.querySelector('.alert');
+	closeAlert.classList.toggle('close');
+}
+
 // ScrollReveal().reveal('.header', { delay: 500 });
 // ScrollReveal().reveal('.carousel', { delay: 500 });
 // ScrollReveal().reveal('.about', { delay: 250 });
