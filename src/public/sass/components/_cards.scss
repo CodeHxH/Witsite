@@ -1,6 +1,10 @@
 .cards {
 	position: relative;
 	margin-bottom: 179px;
+
+	h3.title.center {
+		padding: $padding;
+	}
 }
 
 .cards__info {

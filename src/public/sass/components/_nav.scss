@@ -18,9 +18,22 @@ nav {
 		width: 41px;
 		margin-left: 50px;
 	}
+}
 
-	// Button for small resolutions
-	.nav__btn {
-		display: none;
+// Button for small resolutions
+.nav__btn {
+	display: none;
+	margin-right: 25px;
+
+	* {
+		background: none;
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	i {
+		font-size: 41px;
+		color: #fff;
 	}
 }

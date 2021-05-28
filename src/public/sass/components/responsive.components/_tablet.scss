@@ -1,4 +1,20 @@
 @media screen and (max-width: 1023px) {
+	nav {
+		.nav__links {
+			display: none;
+		}
+
+		.nav__icon {
+			width: 41px;
+			margin-left: 25px;
+		}
+
+		// Button for small resolutions
+		.nav__btn {
+			display: flex;
+		}
+	}
+
 	header {
 		flex-direction: column-reverse;
 		align-items: center;

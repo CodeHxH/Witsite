@@ -18,6 +18,19 @@ function closeAlert() {
 	closeAlert.classList.toggle('close');
 }
 
+// Abrir/Cerrar el menú desplegable
+function toggleMenu(animation) {
+	const menu = document.querySelector('.menu');
+	if (animation == true) {
+		menu.classList.remove('animate__slideOutLeft');
+		menu.classList.add('animate__slideInLeft');
+		menu.classList.add('open');
+	} else {
+		menu.classList.remove('animate__slideInLeft');
+		menu.classList.add('animate__slideOutLeft');
+	}
+}
+
 // ScrollReveal().reveal('.header', { delay: 500 });
 // ScrollReveal().reveal('.carousel', { delay: 500 });
 // ScrollReveal().reveal('.about', { delay: 250 });
