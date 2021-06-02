@@ -86,6 +86,7 @@
 		grid-row: 3/4;
 		margin: 0;
 		font-size: 1.7194rem;
+		transition-delay: 250ms;
 		font-weight: 700;
 	}
 
@@ -93,6 +94,7 @@
 		line-height: 23.19px;
 		grid-row: 4/5;
 		margin: 0;
+		transition-delay: 250ms;
 		max-width: 316px;
 		font-size: 1.0625rem;
 	}
@@ -124,6 +126,7 @@
 
 	.proyect__info {
 		width: 18%;
+		transition-delay: 250ms;
 	}
 
 	.proyect__number {
@@ -132,9 +135,11 @@
 
 	.proyect__name {
 		color: transparent;
+		transition-delay: 0ms;
 	}
 
 	.proyect__description {
+		transition-delay: 0ms;
 		color: transparent;
 	}
 

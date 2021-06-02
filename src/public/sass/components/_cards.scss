@@ -21,6 +21,10 @@
 	margin: 0 20px;
 }
 
+.cards__item:hover {
+	transform: translateY(-50px);
+}
+
 .cards__item {
 	background: #111111;
 	box-shadow: 0px 7px 16px 4px rgba(0, 0, 0, 0.25);
@@ -28,9 +32,12 @@
 	width: 100%;
 	min-height: 600px;
 	padding: 0 $padding;
+	transition: 0.35s;
 	display: grid;
 	grid-template-rows: 200px auto-fill;
 	border-radius: 5px;
+	position: relative;
+	cursor: pointer;
 
 	img {
 		align-self: center;
@@ -60,6 +67,18 @@
 	max-width: 1238px;
 	width: 100%;
 	padding: $padding;
+}
+
+.cards__item--more:hover {
+	.cards__main {
+		transform: translateY(-25px);
+	}
+
+	.cards__header {
+		img {
+			opacity: 1;
+		}
+	}
 }
 
 .cards__header {
@@ -93,10 +112,6 @@
 		transition: 0.5s;
 		object-fit: cover;
 	}
-
-	img:hover {
-		opacity: 1;
-	}
 }
 
 .cards__header.service {
@@ -119,7 +134,7 @@
 	max-width: 896px;
 	width: 100%;
 	padding: $padding;
-
+	transition: 0.35s;
 	position: absolute;
 	bottom: 26px;
 

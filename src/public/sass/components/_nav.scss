@@ -12,6 +12,18 @@ nav {
 		padding: 0;
 		margin-right: 50px;
 		width: 269px;
+
+		li {
+			a {
+				transition: 0.25s;
+			}
+		}
+
+		li:hover {
+			a {
+				color: #cd83e2;
+			}
+		}
 	}
 
 	.nav__icon {

@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+*::selection {
+	background: #cd83e2;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -38,6 +42,12 @@ a {
 // Icons
 .bi-arrow-down-circle {
 	font-size: 3.5625rem;
+	transition: 0.25s;
+	position: relative;
+}
+
+.bi-arrow-down-circle:hover {
+	color: #cd83e2;
 }
 
 // Background shadows
