@@ -48,13 +48,11 @@
 		width: 23%;
 
 		.proyect__name {
-			color: #000000;
-			display: none;
+			color: transparent;
 		}
 
 		.proyect__description {
-			color: #000000;
-			display: none;
+			color: transparent;
 		}
 	}
 
@@ -66,12 +64,10 @@
 
 		.proyect__name {
 			color: #000000;
-			display: inline;
 		}
 
 		.proyect__description {
 			color: #000000;
-			display: inline;
 		}
 	}
 
@@ -87,6 +83,16 @@
 
 	.cards__item:nth-child(2) {
 		margin: $padding;
+	}
+
+	.cards__item:hover {
+		transform: none;
+	}
+
+	.cards__item--more:hover {
+		.cards__main {
+			transform: none;
+		}
 	}
 
 	.cards__main {
