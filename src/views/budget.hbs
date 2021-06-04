@@ -117,7 +117,7 @@
 	</div>
 	{{! Objetivo del cliente }}
 	<div class='budget__group'>
-		<p class='group__title'>¿Qué quieres lograr con sitio web?</p>
+		<p class='group__title'>¿Qué quieres lograr con un sitio web?</p>
 		<p class='group__text'>Un sitio web puede tener distintos objetivos.
 			Informar sobre un servicio, vender un producto o llegar a más personas, son
 			algunos de los objetivos que puede tener</p>
@@ -151,10 +151,15 @@
 			estampados, ilustraciones o cualquier otro recurso gráfico asociado a su
 			marca, y del cual podamos disponer en el proyecto.</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group--select' id='group__graphicElements'>
 			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
-				<i class='bi'></i>
+				<input type='radio' name='graphicElements' value="Si" id='option_1B' />
+				<input type='radio' name='graphicElements' value="No" id='option_2B' />
+
+				<label class='form__option--1B' for='option_1B'></label>
+				<p>Si</p>
+				<label class='form__option--2B' for='option_2B'></label>
+				<p>No</p>
 			</div>
 		</div>
 	</div>
@@ -162,7 +167,7 @@
 	<div class='budget__group'>
 		<p class='group__title'>¿Qué cantidad de usuarios va a tener o tiene tu
 			negocio?</p>
-		<div class='form__group--select' id='group__proyect'>
+		<div class='form__group--select' id='group__usersNumber'>
 			<div class='form__group--input'>
 				<input type='radio' name='usersNumber' value="Menos de 100" id='option_1C' />
 				<input type='radio' name='usersNumber' value="De 100 a 200" id='option_2C' />

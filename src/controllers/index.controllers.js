@@ -63,6 +63,7 @@ indexCtrl.sendEmailBudget = async (req, res) => {
 		clientCountry,
 		businessType,
 		businessName,
+		graphicElements,
 		proyectType,
 		clientGoal,
 		usersNumber,
@@ -80,6 +81,7 @@ indexCtrl.sendEmailBudget = async (req, res) => {
     <li>clientCountry: ${clientCountry}</li>
     <li>businessType: ${businessType}</li>
     <li>businessName: ${businessName}</li>
+    <li>graphicElements: ${graphicElements}</li>
     <li>proyectType: ${proyectType}</li>
     <li>clientGoal: ${clientGoal}</li>
     <li>usersNumber: ${usersNumber}</li>
