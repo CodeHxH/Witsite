@@ -18,30 +18,42 @@
 	</p>
 </section>
 
-<form action='' method='POST' id='form' class='form budget__form'>
+<form action='/send-budget' method='POST' id='form' class='form budget__form'>
 	{{! Nombre del cliente }}
 	<div class='budget__group'>
 		<p class='group__title'>¿Cómo te llamas?</p>
 		<p class='group__text'>Dinos tu nombre para poder referirnos a ti.</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group' id='group__clientName'>
 			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
+				<input type='text' name='clientName' class='input' id='clientName' />
 				<i class='bi'></i>
 			</div>
 			<p class='form__error'>El nombre tiene que ser de 4 a 16 dígitos y solo
 				puede contener letras.</p>
 		</div>
 	</div>
+	{{! Teléfono del cliente }}
+	<div class='budget__group'>
+		<p class='group__title'>Ingresa tu número de télefono</p>
+		<p class='group__text'>Necesitamos tu número telefónico para
+			poder contactarte.</p>
+
+		<div class='form__group' id='group__clientPhone'>
+			<div class='form__group--input'>
+				<input type='text' name='clientPhone' class='input' id='clientPhone' />
+				<i class='bi'></i>
+			</div>
+			<p class='form__error'>El teléfono solo puede contener numeros y el maximo son 14 dígitos.</p>
+		</div>
+	</div>
 	{{! Email del cliente }}
 	<div class='budget__group'>
 		<p class='group__title'>Ingresa tu Email</p>
-		<p class='group__text'>Necesitamos tu dirección de correo electronico para
-			poder contactarte.</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group' id='group__clientEmail'>
 			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
+				<input type='text' name='clientEmail' class='input' id='clientEmail' />
 				<i class='bi'></i>
 			</div>
 			<p class='form__error'>El correo solo puede contener letras, numeros,
@@ -52,9 +64,9 @@
 	<div class='budget__group'>
 		<p class='group__title'>¿De qué país nos contactas?</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group' id='group__clientCountry'>
 			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
+				<input type='text' name='clientCountry' class='input' id='clientCountry' />
 				<i class='bi'></i>
 			</div>
 			<p class='form__error'>El nombre país tiene que ser de 4 a 16 dígitos y
@@ -68,23 +80,24 @@
 		<p class='group__text'>Explicanos brevemente cuál es la finalidad de tu
 			negocio y que tipo de producto o servicio ofrece.</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group' id='group__businessType'>
 			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
+				<input type='text' name='businessType' class='input' id='businessType' />
 				<i class='bi'></i>
 			</div>
+			<p class='form__error'>Este campo es necesario.</p>
 		</div>
 	</div>
 	{{! Tipo de proyecto }}
 	<div class='budget__group'>
 		<p class='group__title'>¿Qué tipo de proyecto quieres que hagamos?</p>
-		<div class='form__group--select' id='group__proyect'>
+		<div class='form__group--select' id='group__proyectType'>
 			<div class='form__group--input'>
-				<input type='radio' name='proyect' id='option_1A' />
-				<input type='radio' name='proyect' id='option_2A' />
-				<input type='radio' name='proyect' id='option_3A' />
-				<input type='radio' name='proyect' id='option_4A' />
-				<input type='radio' name='proyect' id='option_5A' />
+				<input type='radio' name='proyectType' id='option_1A' />
+				<input type='radio' name='proyectType' id='option_2A' />
+				<input type='radio' name='proyectType' id='option_3A' />
+				<input type='radio' name='proyectType' id='option_4A' />
+				<input type='radio' name='proyectType' id='option_5A' />
 
 				
 
@@ -102,19 +115,20 @@
 			</div>
 		</div>
 	</div>
-	{{! Opinión del cliente }}
+	{{! Objetivo del cliente }}
 	<div class='budget__group'>
-		<p class='group__title'>¿Qué crees que le puede aportar un sitio web a tu
-			negocio?</p>
+		<p class='group__title'>¿Qué quieres lograr con sitio web?</p>
 		<p class='group__text'>Un sitio web puede tener distintos objetivos.
-			Informar sobre un servicio, vender un producto o dar un mensaje, son
+			Informar sobre un servicio, vender un producto o llegar a más personas, son
 			algunos de los objetivos que puede tener</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group' id='group__clientGoal'>
 			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
+				<input type='text' name='clientGoal' class='input' id='clientGoal' />
 				<i class='bi'></i>
 			</div>
+			<p class='form__error'>Este campo es necesario.</p>
+
 		</div>
 	</div>
 	{{! Nombre del negocio }}
@@ -122,50 +136,10 @@
 		<p class='group__title'>¿Tu negocio tiene un nombre?</p>
 		<p class='group__text'>Escribe el nombre de tu negocio.</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group' id='group__businessName'>
 			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
+				<input type='text' name='businessName' class='input' id='businessName' />
 				<i class='bi'></i>
-			</div>
-		</div>
-	</div>
-	{{! Factor diferenciador }}
-	<div class='budget__group'>
-		<p class='group__title'>¿Qué diferencia a tu negocio de los demás?</p>
-		<p class='group__text'>¿Tu negocio tiene algún factor diferenciador que lo
-			haga resaltar entre los demás negocios?</p>
-
-		<div class='form__group' id='group__name2'>
-			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
-				<i class='bi'></i>
-			</div>
-		</div>
-	</div>
-	{{! Empleados }}
-	<div class='budget__group'>
-		<p class='group__title'>¿Cuántos empleados va a tener o tiene tu negocio?</p>
-		<div class='form__group--select' id='group__proyect'>
-			<div class='form__group--input'>
-				<input type='radio' name='staff' id='option_1B' />
-				<input type='radio' name='staff' id='option_2B' />
-				<input type='radio' name='staff' id='option_3B' />
-				<input type='radio' name='staff' id='option_4B' />
-				<input type='radio' name='staff' id='option_5B' />
-				<input type='radio' name='staff' id='option_6B' />
-
-				<label class='form__option--1B' for='option_1B'></label>
-				<p>De 1 a 5</p>
-				<label class='form__option--2B' for='option_2B'></label>
-				<p>De 5 a 25</p>
-				<label class='form__option--3B' for='option_3B'></label>
-				<p>De 25 a 100</p>
-				<label class='form__option--4B' for='option_4B'></label>
-				<p>De 100 a 200</p>
-				<label class='form__option--5B' for='option_5B'></label>
-				<p>De 200 a 500</p>
-				<label class='form__option--6B' for='option_6B'></label>
-				<p>Más de 500</p>
 			</div>
 		</div>
 	</div>
@@ -190,12 +164,12 @@
 			negocio?</p>
 		<div class='form__group--select' id='group__proyect'>
 			<div class='form__group--input'>
-				<input type='radio' name='users' id='option_1C' />
-				<input type='radio' name='users' id='option_2C' />
-				<input type='radio' name='users' id='option_3C' />
-				<input type='radio' name='users' id='option_4C' />
-				<input type='radio' name='users' id='option_5C' />
-				<input type='radio' name='users' id='option_6C' />
+				<input type='radio' name='UsersNumber' id='option_1C' />
+				<input type='radio' name='UsersNumber' id='option_2C' />
+				<input type='radio' name='UsersNumber' id='option_3C' />
+				<input type='radio' name='UsersNumber' id='option_4C' />
+				<input type='radio' name='UsersNumber' id='option_5C' />
+				<input type='radio' name='UsersNumber' id='option_6C' />
 
 				<label class='form__option--1C' for='option_1C'></label>
 				<p>Menos de 100</p>
@@ -216,13 +190,11 @@
 		<p class='group__text'>Si es así, adjunta los enlaces aquí.
 		</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group' id='group__socialNetwork'>
 			<div class='form__group--input'>
-				<input type='text' name='name' class='input' id='name' />
+				<input type='text' name='socialNetwork' class='input' id='socialNetwork' />
 				<i class='bi'></i>
 			</div>
-			<p class='form__error'>El nombre tiene que ser de 4 a 16 dígitos y solo
-				puede contener letras.</p>
 		</div>
 	</div>
 	{{! Fecha límite }}
@@ -230,20 +202,21 @@
 		<p class='group__title'>¿Tenemos alguna fecha límite?</p>
 		<p class='group__text'>*Información opcional*</p>
 
-		<div class='form__group' id='group__name2'>
+		<div class='form__group' id='group__deadline'>
 			<div class='form__group--input'>
-				<input type='date' name='' class='input date' id='name' />
+				<input type='date' name='deadline' class='input date' id='deadline' />
 				<i class='bi'></i>
 			</div>
 		</div>
 	</div>
-	{{! Usuarios }}
+	{{! Mensaje }}
 	<div class='budget__group'>
 		<p class='group__title'>¿Hay algo más que quieras decirnos?</p>
 		<p class='group__text'>*Información opcional*</p>
-		<div class='form__group--textarea' id='group__proyect'>
+
+		<div class='form__group--textarea' id='group__budgetMessage'>
 			<div class='form__group--input'>
-				<textarea name='message'></textarea>
+				<textarea name='budgetMessage'></textarea>
 			</div>
 		</div>
 	</div>

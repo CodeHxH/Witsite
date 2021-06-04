@@ -6,6 +6,7 @@ const expressions = {
 	name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	phone: /^\d{7,14}$/, // 7 a 14 numeros.
+	all: /^[0-9a-zA-ZÀ-ÿ\s]{1,}$/, // no debe estar vacio.
 };
 
 // Campos a confirmar
@@ -16,11 +17,10 @@ const fields = {
 	phone: false,
 
 	clientName: false,
-	clientLastname: false,
-	clientEmail: false,
 	clientPhone: false,
-	clientCity: false,
-	clientState: false,
+	clientEmail: false,
+	clientCountry: false,
+	clientGoal: false,
 };
 
 // Validando campos
@@ -76,20 +76,23 @@ const validateForm = (input) => {
 		case 'clientName':
 			validateField(expressions.name, input.target, 'clientName');
 			break;
-		case 'clientLastname':
-			validateField(expressions.name, input.target, 'clientLastname');
+		case 'clientPhone':
+			validateField(expressions.phone, input.target, 'clientPhone');
 			break;
 		case 'clientEmail':
 			validateField(expressions.email, input.target, 'clientEmail');
 			break;
-		case 'clientPhone':
-			validateField(expressions.phone, input.target, 'clientPhone');
+		//
+		case 'clientCountry':
+			validateField(expressions.name, input.target, 'clientCountry');
 			break;
-		case 'clientCity':
-			validateField(expressions.name, input.target, 'clientCity');
+		//
+		case 'businessType':
+			validateField(expressions.all, input.target, 'businessType');
 			break;
-		case 'clientState':
-			validateField(expressions.name, input.target, 'clientState');
+		//
+		case 'clientGoal':
+			validateField(expressions.all, input.target, 'clientGoal');
 			break;
 	}
 };
