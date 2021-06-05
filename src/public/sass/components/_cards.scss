@@ -55,6 +55,7 @@
 
 	p {
 		line-height: 23.19px;
+		text-align: justify;
 		margin: 0;
 		margin-top: 15px;
 		width: 100%;
@@ -144,6 +145,16 @@
 		font-weight: 700;
 	}
 
+	a {
+		display: block;
+		font-weight: 800;
+	}
+
+	a:hover {
+		color: #cd83e2;
+		transition: 0.25s;
+	}
+
 	p {
 		background: #111111;
 		box-shadow: 0px 7px 15px 10px rgba(0, 0, 0, 0.25);
@@ -152,13 +163,14 @@
 		padding: $padding;
 		margin: 0;
 		margin-top: 16px;
+		text-align: justify;
 	}
 }
 
 .cards__main.service {
-	right: 0;
+	right: $padding;
 }
 
 .cards__item--more.info {
-	margin-top: 166px;
+	margin: 166px 0;
 }

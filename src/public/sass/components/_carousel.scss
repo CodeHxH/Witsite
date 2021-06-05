@@ -33,10 +33,25 @@
 
 	.carousel__back {
 		left: -70px;
+
+		i {
+			transition: 0.25s;
+		}
 	}
 
 	.carousel__next {
 		right: -70px;
+
+		i {
+			transition: 0.25s;
+		}
+	}
+
+	.carousel__back:hover,
+	.carousel__next:hover {
+		i {
+			color: #cd83e2;
+		}
 	}
 
 	button {
