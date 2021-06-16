@@ -1,10 +1,14 @@
 .about {
 	max-width: 931px;
 	width: 100%;
-	margin-bottom: 100px;
 	padding: $padding;
 	line-height: 23.19px;
 	font-weight: 400;
+
+	p {
+		text-align: justify;
+	}
+
 
 	h2.title {
 		margin-bottom: 80px;
@@ -23,7 +27,6 @@
 	// About Info
 	.about__info {
 		padding: 0;
-		margin-bottom: 50px;
 
 		li {
 			margin-top: 25px;
