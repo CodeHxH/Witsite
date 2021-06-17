@@ -2,7 +2,7 @@
 	position: relative;
 	margin-bottom: 179px;
 
-	h3.title.center {
+	h2.title.center {
 		padding: $padding;
 	}
 }
@@ -46,7 +46,7 @@
 		width: 100%;
 	}
 
-	h5 {
+	h3 {
 		font-size: 1.7194rem;
 		font-weight: 700;
 		margin: 0;
@@ -87,7 +87,7 @@
 	display: flex;
 	flex-direction: column;
 
-	h4 {
+	h2 {
 		font-size: 2.7819rem;
 		width: 100%;
 		margin-bottom: 30px;
@@ -118,7 +118,7 @@
 .cards__header.service {
 	align-items: flex-start;
 
-	h4 {
+	h2 {
 		text-align: left;
 	}
 }
@@ -126,7 +126,7 @@
 .cards__header.info {
 	align-items: flex-end;
 
-	h4 {
+	h2 {
 		text-align: right;
 	}
 }
@@ -139,7 +139,7 @@
 	position: absolute;
 	bottom: 26px;
 
-	h5 {
+	h3 {
 		margin: 0;
 		font-size: 1.7194rem;
 		font-weight: 700;

@@ -44,7 +44,13 @@ header {
 	}
 
 	.header__text {
-		margin-bottom: 50px;
+		display: inline;
 		line-height: 23.19px;
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	.container__text {
+		margin-bottom: 50px;
 	}
 }

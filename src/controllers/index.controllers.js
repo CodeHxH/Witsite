@@ -14,10 +14,6 @@ indexCtrl.renderBudget = (req, res) => {
 	res.render('budget');
 };
 
-indexCtrl.renderMessage = (req, res) => {
-	res.render('answer');
-};
-
 indexCtrl.sendEmailContact = async (req, res) => {
 	const { name, lastname, email, phone, message } = req.body;
 
@@ -75,18 +71,18 @@ indexCtrl.sendEmailBudget = async (req, res) => {
 	contentHTML = `
 	<h1>Información de Usuario</h1>
 	<ul>
-    <li>clientName: ${clientName}</li>
-    <li>clientPhone: ${clientPhone}</li>
-    <li>clientEmail: ${clientEmail}</li>
-    <li>clientCountry: ${clientCountry}</li>
-    <li>businessType: ${businessType}</li>
-    <li>businessName: ${businessName}</li>
-    <li>graphicElements: ${graphicElements}</li>
-    <li>proyectType: ${proyectType}</li>
-    <li>clientGoal: ${clientGoal}</li>
-    <li>usersNumber: ${usersNumber}</li>
-    <li>socialNetwork: ${socialNetwork}</li>
-    <li>deadline: ${deadline}</li>
+    <li>Nombre: ${clientName}</li>
+    <li>Teléfono: ${clientPhone}</li>
+    <li>Email: ${clientEmail}</li>
+    <li>País: ${clientCountry}</li>
+    <li>Tipo de negocio: ${businessType}</li>
+    <li>Nombre del negocio: ${businessName}</li>
+    <li>Branding: ${graphicElements}</li>
+    <li>Tipo de proyecto: ${proyectType}</li>
+    <li>Meta esperada: ${clientGoal}</li>
+    <li>Usuarios esperados: ${usersNumber}</li>
+    <li>Redes sociales: ${socialNetwork}</li>
+    <li>Deadline: ${deadline}</li>
 	</ul>
 	<p>${message}</p>
 	`;
