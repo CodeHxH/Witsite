@@ -5,6 +5,10 @@
 	margin-top: 172px;
 	position: relative;
 
+	.glider {
+		display: flex;
+	}
+
 	.glider__item {
 		position: relative;
 		margin: 0 25px;

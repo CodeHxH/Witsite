@@ -14,14 +14,70 @@
 		margin-top: 0;
 	}
 
-	.proyect__info {
-		width: 25%;
+	// Transition
+	.glider {
+		img {
+			opacity: 1;
+			filter: brightness(30%);
+		}
+
+		.proyect__info {
+			width: 100%;
+			background-color: transparent;
+			transition-delay: 250ms;
+		}
+
+		.proyect__number {
+			color: #fff;
+		}
+
+		.proyect__name {
+			color: #fff;
+			transition-delay: 0ms;
+		}
+
+		.proyect__description {
+			transition-delay: 0ms;
+			color: #fff;
+		}
+
+		.proyect__links {
+			i {
+				color: #fff;
+			}
+		}
 	}
 
 	// Transition
 	.glider:hover {
+		img {
+			opacity: 1;
+		}
+
 		.proyect__info {
-			width: 70%;
+			width: 100%;
+			background-color: transparent;
+			transition-delay: 250ms;
+		}
+
+		.proyect__number {
+			color: #fff;
+		}
+
+		.proyect__name {
+			color: #fff;
+			transition-delay: 0ms;
+		}
+
+		.proyect__description {
+			transition-delay: 0ms;
+			color: #fff;
+		}
+
+		.proyect__links {
+			i {
+				color: #fff;
+			}
 		}
 	}
 
@@ -42,18 +98,6 @@
 		.cards__img {
 			min-width: 300px;
 			min-height: 100px;
-		}
-	}
-}
-
-@media screen and (max-width: 670px) {
-	.proyect__info {
-		width: 30%;
-	}
-
-	.glider:hover {
-		.proyect__info {
-			width: 100%;
 		}
 	}
 }
@@ -87,8 +131,6 @@
 	}
 
 	.proyect__info {
-		width: 50%;
-
 		.proyect__number {
 			font-size: 5.2831rem;
 		}
@@ -104,9 +146,5 @@
 				font-size: 2rem;
 			}
 		}
-	}
-
-	.proyect__info {
-		width: 50%;
 	}
 }
