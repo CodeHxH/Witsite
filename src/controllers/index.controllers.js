@@ -6,6 +6,13 @@ indexCtrl.renderIndex = (req, res) => {
 	const proyects = [
 		{
 			number: '01',
+			name: 'Wit Store',
+			img: '/images/header1.jpg',
+			description: 'Tienda virtual responsive con diseño minimalista.',
+			link: 'https://wit-store.herokuapp.com/',
+		},
+		{
+			number: '02',
 			name: 'E3 2021',
 			img: '/images/proyect1.png',
 			description:
@@ -13,7 +20,7 @@ indexCtrl.renderIndex = (req, res) => {
 			link: 'https://witsite-e3.herokuapp.com',
 		},
 		{
-			number: '02',
+			number: '03',
 			name: "Louise's Roses",
 			img: '/images/proyect2.png',
 			description:
@@ -21,14 +28,14 @@ indexCtrl.renderIndex = (req, res) => {
 			link: 'https://louises-roses.herokuapp.com',
 		},
 		{
-			number: '03',
+			number: '04',
 			name: 'Galería Dinámica',
 			img: '/images/proyect3.png',
 			description: 'Galería dinámica con búsqueda por etiquetas y categorías.',
 			link: 'https://codehxh.github.io/Galeria',
 		},
 		{
-			number: '04',
+			number: '05',
 			name: 'Notes App',
 			img: '/images/proyect4.png',
 			description:
